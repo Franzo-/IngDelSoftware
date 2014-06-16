@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Rosters>
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Fortitudo Bologna</squadra>
+		<giocatori>
+			<giocatore>Malaventura</giocatore>
+			<giocatore>Montano</giocatore>
+			<giocatore>Muro</giocatore>
+			<giocatore>Cittadini</giocatore>
+			<giocatore>Gigena</giocatore>
+			<giocatore>Borra</giocatore>
+			<giocatore>Micevic</giocatore>
+			<giocatore>Lamma</giocatore>
+			<giocatore>Sorrentino</giocatore>
+			<giocatore>Losi</giocatore>
+			<giocatore>Fin</giocatore>
+			<giocatore>Sanguinetti</giocatore>
+		</giocatori>
+	</Roster>
+	
+		<Roster>
+		<anno>2014</anno>
+		<squadra>Virtus Bologna</squadra>
+		<giocatori>
+			<giocatore>Hardy</giocatore>
+			<giocatore>Imbro</giocatore>
+			<giocatore>Jordan</giocatore>
+			<giocatore>Gaddefords</giocatore>
+			<giocatore>Motum</giocatore>
+			<giocatore>Fontecchio</giocatore>
+			<giocatore>Landi</giocatore>
+			<giocatore>Negri</giocatore>
+			<giocatore>Ware</giocatore>
+			<giocatore>King</giocatore>
+			<giocatore>Ebi</giocatore>
+			<giocatore>Walsh</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Olimpia Milano</squadra>
+		<giocatori>
+			<giocatore>Gentile</giocatore>
+			<giocatore>Cerella</giocatore>
+			<giocatore>Melli</giocatore>
+			<giocatore>Hackett</giocatore>
+			<giocatore>Langford</giocatore>
+			<giocatore>Kangur</giocatore>
+			<giocatore>Samuels</giocatore>
+			<giocatore>Wallace</giocatore>
+			<giocatore>Toure</giocatore>
+			<giocatore>Moss</giocatore>
+			<giocatore>Lawal</giocatore>
+			<giocatore>Jerrels</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Mens Sana Siena</squadra>
+		<giocatori>
+			<giocatore>Viggiano</giocatore>
+			<giocatore>Hunter</giocatore>
+			<giocatore>Cournooh</giocatore>
+			<giocatore>Haynes</giocatore>
+			<giocatore>Janning</giocatore>
+			<giocatore>Ress</giocatore>
+			<giocatore>Ortner</giocatore>
+			<giocatore>Nelson</giocatore>
+			<giocatore>Udom</giocatore>
+			<giocatore>Moss</giocatore>
+			<giocatore>Green</giocatore>
+			<giocatore>Eze</giocatore>
+		</giocatori>
+	</Roster>
+	
+		<Roster>
+		<anno>2014</anno>
+		<squadra>Virtus Roma</squadra>
+		<giocatori>
+			<giocatore>Goss</giocatore>
+			<giocatore>Jones</giocatore>	
+			<giocatore>Reali</giocatore>	
+			<giocatore>Tonolli</giocatore>	
+			<giocatore>Righetti</giocatore>	
+			<giocatore>D'Ercole</giocatore>	
+			<giocatore>Hosley</giocatore>
+			<giocatore>Mayo</giocatore>	
+			<giocatore>Baron</giocatore>	
+			<giocatore>Moraschini</giocatore>
+			<giocatore>Mbakwe</giocatore>
+			<giocatore>Kanacevic</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Sutor Montegranaro</squadra>
+		<giocatori>
+			<giocatore>Cinciarini</giocatore>
+			<giocatore>Sakic</giocatore>
+			<giocatore>Tessitore</giocatore>
+			<giocatore>Rossi</giocatore>
+			<giocatore>Lauwers</giocatore>
+			<giocatore>Kudlacek</giocatore>
+			<giocatore>Campani</giocatore>
+			<giocatore>Mazzola</giocatore>
+			<giocatore>Mitrovic</giocatore>
+			<giocatore>Garris</giocatore>
+			<giocatore>Datome</giocatore>
+			<giocatore>Quaglia</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>VuElle Pesaro</squadra>
+		<giocatori>
+			<giocatore>Traini</giocatore>
+			<giocatore>Musso</giocatore>	
+			<giocatore>Bartolucci</giocatore>
+			<giocatore>Terenzi</giocatore>
+			<giocatore>Johnson</giocatore>
+			<giocatore>Panzieri</giocatore>
+			<giocatore>Pecile</giocatore>
+			<giocatore>Dordei</giocatore>
+			<giocatore>Trasolini</giocatore>
+			<giocatore>Anosike</giocatore>
+			<giocatore>Turner</giocatore>
+			<giocatore>Petty</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Dinamo Sassari</squadra>
+		<giocatori>
+			<giocatore>Green</giocatore>
+			<giocatore>Caleb</giocatore>	
+			<giocatore>Devecchi</giocatore>
+			<giocatore>Chessa</giocatore>
+			<giocatore>Gordon</giocatore>
+			<giocatore>Diener</giocatore>
+			<giocatore>Sacchetti</giocatore>
+			<giocatore>Dienere</giocatore>
+			<giocatore>Vanuzzo</giocatore>
+			<giocatore>Ezu</giocatore>
+			<giocatore>Tessitori</giocatore>
+			<giocatore>Thomas</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Mantova</squadra>
+		<giocatori>
+			<giocatore>Ranuzzi</giocatore>
+			<giocatore>Duncun</giocatore>	
+			<giocatore>Ginobili</giocatore>
+			<giocatore>Parker</giocatore>
+			<giocatore>Belinelli</giocatore>
+			<giocatore>Splitter</giocatore>
+			<giocatore>Leonard</giocatore>
+			<giocatore>Diaw</giocatore>
+			<giocatore>Ellis</giocatore>
+			<giocatore>Mils</giocatore>
+			<giocatore>Bayness</giocatore>
+			<giocatore>Ayres</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Forli</squadra>
+		<giocatori>
+			<giocatore>Aleotti</giocatore>
+			<giocatore>Arfilli</giocatore>	
+			<giocatore>Bassini</giocatore>
+			<giocatore>Caini</giocatore>
+			<giocatore>Cardellini</giocatore>
+			<giocatore>Busuoli</giocatore>
+			<giocatore>De Simone</giocatore>
+			<giocatore>Dall'Erba</giocatore>
+			<giocatore>Fiorentino</giocatore>
+			<giocatore>Frabetti</giocatore>
+			<giocatore>Forlivesi</giocatore>
+			<giocatore>Gardenghi</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Capo d'Orlando</squadra>
+		<giocatori>
+			<giocatore>Colliva</giocatore>
+			<giocatore>Ottavi</giocatore>	
+			<giocatore>Gardini</giocatore>
+			<giocatore>Gardino</giocatore>
+			<giocatore>Mangornong</giocatore>
+			<giocatore>Romano</giocatore>
+			<giocatore>De Anna</giocatore>
+			<giocatore>Savic</giocatore>
+			<giocatore>Diop</giocatore>
+			<giocatore>Genovese</giocatore>
+			<giocatore>Gianaroli</giocatore>
+			<giocatore>Torri</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Pistoia</squadra>
+		<giocatori>
+			<giocatore>Sangiorgi</giocatore>
+			<giocatore>Marchesi</giocatore>	
+			<giocatore>Guizzardi</giocatore>
+			<giocatore>Mazziotti</giocatore>
+			<giocatore>Dinoi</giocatore>
+			<giocatore>Semprini</giocatore>
+			<giocatore>Merighi</giocatore>
+			<giocatore>Baldassarri</giocatore>
+			<giocatore>Pastore</giocatore>
+			<giocatore>Zanni</giocatore>
+			<giocatore>Gregori</giocatore>
+			<giocatore>Maccio</giocatore>
+		</giocatori>
+	</Roster>	
+	
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Tortona</squadra>
+		<giocatori>
+			<giocatore>Vignoli</giocatore>
+			<giocatore>Lazzari</giocatore>	
+			<giocatore>Mezzetti</giocatore>
+			<giocatore>Mazzetti</giocatore>
+			<giocatore>Zauli</giocatore>
+			<giocatore>Fantoni</giocatore>
+			<giocatore>Baldi</giocatore>
+			<giocatore>Delli</giocatore>
+			<giocatore>Selmi</giocatore>
+			<giocatore>Anastasia</giocatore>
+			<giocatore>Prati</giocatore>
+			<giocatore>Mangano</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Legnano</squadra>
+		<giocatori>
+			<giocatore>Natali</giocatore>
+			<giocatore>Poggioli</giocatore>	
+			<giocatore>Placidi</giocatore>
+			<giocatore>Fioretti</giocatore>
+			<giocatore>Zerbini</giocatore>
+			<giocatore>Loddo</giocatore>
+			<giocatore>Tedeschi</giocatore>
+			<giocatore>Colombo</giocatore>
+			<giocatore>Dondi</giocatore>
+			<giocatore>Tosatti</giocatore>
+			<giocatore>Matulli</giocatore>
+			<giocatore>Damiani</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Cento</squadra>
+		<giocatori>
+			<giocatore>Vallara</giocatore>
+			<giocatore>Morra</giocatore>	
+			<giocatore>Barbieri</giocatore>
+			<giocatore>Costi</giocatore>
+			<giocatore>Diani</giocatore>
+			<giocatore>Tarpinelli</giocatore>
+			<giocatore>Rossiello</giocatore>
+			<giocatore>Pelliccia</giocatore>
+			<giocatore>Stasi</giocatore>
+			<giocatore>Gentilini</giocatore>
+			<giocatore>Neri</giocatore>
+			<giocatore>Corelli</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2014</anno>
+		<squadra>Brescia</squadra>
+		<giocatori>
+			<giocatore>Balotelli</giocatore>
+			<giocatore>Verratti</giocatore>	
+			<giocatore>Pirlo</giocatore>
+			<giocatore>De Rossi</giocatore>
+			<giocatore>Marchisio</giocatore>
+			<giocatore>Sirigu</giocatore>
+			<giocatore>Chiellini</giocatore>
+			<giocatore>Barzagli</giocatore>
+			<giocatore>Cerci</giocatore>
+			<giocatore>Immobile</giocatore>
+			<giocatore>Candreva</giocatore>
+			<giocatore>Abate</giocatore>
+		</giocatori>
+	</Roster>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Fortitudo Bologna</squadra>
+		<giocatori>
+			<giocatore>Malaventura</giocatore>
+			<giocatore>Montano</giocatore>
+			<giocatore>Muro</giocatore>
+			<giocatore>Cittadini</giocatore>
+			<giocatore>Gigena</giocatore>
+			<giocatore>Borra</giocatore>
+			<giocatore>Micevic</giocatore>
+			<giocatore>Lamma</giocatore>
+			<giocatore>Sorrentino</giocatore>
+			<giocatore>Losi</giocatore>
+			<giocatore>Fin</giocatore>
+			<giocatore>Sanguinetti</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Virtus Bologna</squadra>
+		<giocatori>
+			<giocatore>Hardy</giocatore>
+			<giocatore>Imbro</giocatore>
+			<giocatore>Jordan</giocatore>
+			<giocatore>Gaddefords</giocatore>
+			<giocatore>Motum</giocatore>
+			<giocatore>Fontecchio</giocatore>
+			<giocatore>Landi</giocatore>
+			<giocatore>Negri</giocatore>
+			<giocatore>Ware</giocatore>
+			<giocatore>King</giocatore>
+			<giocatore>Ebi</giocatore>
+			<giocatore>Walsh</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Olimpia Milano</squadra>
+		<giocatori>
+			<giocatore>Gentile</giocatore>
+			<giocatore>Cerella</giocatore>
+			<giocatore>Melli</giocatore>
+			<giocatore>Hackett</giocatore>
+			<giocatore>Langford</giocatore>
+			<giocatore>Kangur</giocatore>
+			<giocatore>Samuels</giocatore>
+			<giocatore>Wallace</giocatore>
+			<giocatore>Toure</giocatore>
+			<giocatore>Moss</giocatore>
+			<giocatore>Lawal</giocatore>
+			<giocatore>Jerrels</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Mens Sana Siena</squadra>
+		<giocatori>
+			<giocatore>Viggiano</giocatore>
+			<giocatore>Hunter</giocatore>
+			<giocatore>Cournooh</giocatore>
+			<giocatore>Haynes</giocatore>
+			<giocatore>Janning</giocatore>
+			<giocatore>Ress</giocatore>
+			<giocatore>Ortner</giocatore>
+			<giocatore>Nelson</giocatore>
+			<giocatore>Udom</giocatore>
+			<giocatore>Moss</giocatore>
+			<giocatore>Green</giocatore>
+			<giocatore>Eze</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Virtus Roma</squadra>
+		<giocatori>
+			<giocatore>Goss</giocatore>
+			<giocatore>Jones</giocatore>	
+			<giocatore>Reali</giocatore>	
+			<giocatore>Tonolli</giocatore>	
+			<giocatore>Righetti</giocatore>	
+			<giocatore>D'Ercole</giocatore>	
+			<giocatore>Hosley</giocatore>
+			<giocatore>Mayo</giocatore>	
+			<giocatore>Baron</giocatore>	
+			<giocatore>Moraschini</giocatore>
+			<giocatore>Mbakwe</giocatore>
+			<giocatore>Kanacevic</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Sutor Montegranaro</squadra>
+		<giocatori>
+			<giocatore>Cinciarini</giocatore>
+			<giocatore>Sakic</giocatore>
+			<giocatore>Tessitore</giocatore>
+			<giocatore>Rossi</giocatore>
+			<giocatore>Lauwers</giocatore>
+			<giocatore>Kudlacek</giocatore>
+			<giocatore>Campani</giocatore>
+			<giocatore>Mazzola</giocatore>
+			<giocatore>Mitrovic</giocatore>
+			<giocatore>Garris</giocatore>
+			<giocatore>Datome</giocatore>
+			<giocatore>Quaglia</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>VuElle Pesaro</squadra>
+		<giocatori>
+			<giocatore>Traini</giocatore>
+			<giocatore>Musso</giocatore>	
+			<giocatore>Bartolucci</giocatore>
+			<giocatore>Terenzi</giocatore>
+			<giocatore>Johnson</giocatore>
+			<giocatore>Panzieri</giocatore>
+			<giocatore>Pecile</giocatore>
+			<giocatore>Dordei</giocatore>
+			<giocatore>Trasolini</giocatore>
+			<giocatore>Anosike</giocatore>
+			<giocatore>Turner</giocatore>
+			<giocatore>Petty</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Dinamo Sassari</squadra>
+		<giocatori>
+			<giocatore>Green</giocatore>
+			<giocatore>Caleb</giocatore>	
+			<giocatore>Devecchi</giocatore>
+			<giocatore>Chessa</giocatore>
+			<giocatore>Gordon</giocatore>
+			<giocatore>Diener</giocatore>
+			<giocatore>Sacchetti</giocatore>
+			<giocatore>Dienere</giocatore>
+			<giocatore>Vanuzzo</giocatore>
+			<giocatore>Ezu</giocatore>
+			<giocatore>Tessitori</giocatore>
+			<giocatore>Thomas</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Mantova</squadra>
+		<giocatori>
+			<giocatore>Ranuzzi</giocatore>
+			<giocatore>Duncun</giocatore>	
+			<giocatore>Ginobili</giocatore>
+			<giocatore>Parker</giocatore>
+			<giocatore>Belinelli</giocatore>
+			<giocatore>Splitter</giocatore>
+			<giocatore>Leonard</giocatore>
+			<giocatore>Diaw</giocatore>
+			<giocatore>Ellis</giocatore>
+			<giocatore>Mils</giocatore>
+			<giocatore>Bayness</giocatore>
+			<giocatore>Ayres</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Forli</squadra>
+		<giocatori>
+			<giocatore>Aleotti</giocatore>
+			<giocatore>Arfilli</giocatore>	
+			<giocatore>Bassini</giocatore>
+			<giocatore>Caini</giocatore>
+			<giocatore>Cardellini</giocatore>
+			<giocatore>Busuoli</giocatore>
+			<giocatore>De Simone</giocatore>
+			<giocatore>Dall'Erba</giocatore>
+			<giocatore>Fiorentino</giocatore>
+			<giocatore>Frabetti</giocatore>
+			<giocatore>Forlivesi</giocatore>
+			<giocatore>Gardenghi</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Capo d'Orlando</squadra>
+		<giocatori>
+			<giocatore>Colliva</giocatore>
+			<giocatore>Ottavi</giocatore>	
+			<giocatore>Gardini</giocatore>
+			<giocatore>Gardino</giocatore>
+			<giocatore>Mangornong</giocatore>
+			<giocatore>Romano</giocatore>
+			<giocatore>De Anna</giocatore>
+			<giocatore>Savic</giocatore>
+			<giocatore>Diop</giocatore>
+			<giocatore>Genovese</giocatore>
+			<giocatore>Gianaroli</giocatore>
+			<giocatore>Torri</giocatore>
+		</giocatori>
+	</Roster>
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Pistoia</squadra>
+		<giocatori>
+			<giocatore>Sangiorgi</giocatore>
+			<giocatore>Marchesi</giocatore>	
+			<giocatore>Guizzardi</giocatore>
+			<giocatore>Mazziotti</giocatore>
+			<giocatore>Dinoi</giocatore>
+			<giocatore>Semprini</giocatore>
+			<giocatore>Merighi</giocatore>
+			<giocatore>Baldassarri</giocatore>
+			<giocatore>Pastore</giocatore>
+			<giocatore>Zanni</giocatore>
+			<giocatore>Gregori</giocatore>
+			<giocatore>Maccio</giocatore>
+		</giocatori>
+	</Roster>	
+	
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Tortona</squadra>
+		<giocatori>
+			<giocatore>Vignoli</giocatore>
+			<giocatore>Lazzari</giocatore>	
+			<giocatore>Mezzetti</giocatore>
+			<giocatore>Mazzetti</giocatore>
+			<giocatore>Zauli</giocatore>
+			<giocatore>Fantoni</giocatore>
+			<giocatore>Baldi</giocatore>
+			<giocatore>Delli</giocatore>
+			<giocatore>Selmi</giocatore>
+			<giocatore>Anastasia</giocatore>
+			<giocatore>Prati</giocatore>
+			<giocatore>Mangano</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Legnano</squadra>
+		<giocatori>
+			<giocatore>Natali</giocatore>
+			<giocatore>Poggioli</giocatore>	
+			<giocatore>Placidi</giocatore>
+			<giocatore>Fioretti</giocatore>
+			<giocatore>Zerbini</giocatore>
+			<giocatore>Loddo</giocatore>
+			<giocatore>Tedeschi</giocatore>
+			<giocatore>Colombo</giocatore>
+			<giocatore>Dondi</giocatore>
+			<giocatore>Tosatti</giocatore>
+			<giocatore>Matulli</giocatore>
+			<giocatore>Damiani</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Cento</squadra>
+		<giocatori>
+			<giocatore>Vallara</giocatore>
+			<giocatore>Morra</giocatore>	
+			<giocatore>Barbieri</giocatore>
+			<giocatore>Costi</giocatore>
+			<giocatore>Diani</giocatore>
+			<giocatore>Tarpinelli</giocatore>
+			<giocatore>Rossiello</giocatore>
+			<giocatore>Pelliccia</giocatore>
+			<giocatore>Stasi</giocatore>
+			<giocatore>Gentilini</giocatore>
+			<giocatore>Neri</giocatore>
+			<giocatore>Corelli</giocatore>
+		</giocatori>
+	</Roster>
+
+	<Roster>
+		<anno>2013</anno>
+		<squadra>Brescia</squadra>
+		<giocatori>
+			<giocatore>Balotelli</giocatore>
+			<giocatore>Verratti</giocatore>	
+			<giocatore>Pirlo</giocatore>
+			<giocatore>De Rossi</giocatore>
+			<giocatore>Marchisio</giocatore>
+			<giocatore>Sirigu</giocatore>
+			<giocatore>Chiellini</giocatore>
+			<giocatore>Barzagli</giocatore>
+			<giocatore>Cerci</giocatore>
+			<giocatore>Immobile</giocatore>
+			<giocatore>Candreva</giocatore>
+			<giocatore>Abate</giocatore>
+		</giocatori>
+	</Roster>
+</Rosters>	 
+
+				
+
+	

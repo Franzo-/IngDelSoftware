@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Campionati>
+	<Campionato>
+		<anno>2014</anno>
+		<serie>Serie A</serie>
+		<Squadre>
+			<squadra>Fortitudo Bologna</squadra>
+			<squadra>Virtus Bologna</squadra>
+			<squadra>Olimpia Milano</squadra>
+			<squadra>Mens Sana Siena</squadra>
+		</Squadre>
+	</Campionato>
+	
+	<Campionato>
+		<anno>2014</anno>
+		<serie>Serie A2</serie>
+		<Squadre>
+			<squadra>Virtus Roma</squadra>
+			<squadra>Sutor Montegranaro</squadra>
+			<squadra>VuElle Pesaro</squadra>
+			<squadra>Dinamo Sassari</squadra>
+		</Squadre>
+	</Campionato>
+	
+	<Campionato>
+		<anno>2014</anno>
+		<serie>Lega Gold</serie>
+		<Squadre>
+			<squadra>Mantova</squadra>
+			<squadra>Forli</squadra>
+			<squadra>Capo d'Orlando</squadra>
+			<squadra>Pistoia</squadra>
+		</Squadre>
+	</Campionato>
+	
+		<Campionato>
+		<anno>2014</anno>
+		<serie>Lega Silver</serie>
+		<Squadre>
+			<squadra>Tortona</squadra>
+			<squadra>Legnano</squadra>
+			<squadra>Cento</squadra>
+			<squadra>Brescia</squadra>
+		</Squadre>
+	</Campionato>
+	
+<Campionato>
+		<anno>2013</anno>
+		<serie>Serie A</serie>
+		<Squadre>
+			<squadra>Fortitudo Bologna</squadra>
+			<squadra>Virtus Bologna</squadra>
+			<squadra>Olimpia Milano</squadra>
+			<squadra>Virtus Roma</squadra>
+		</Squadre>
+	</Campionato>
+	
+	<Campionato>
+		<anno>2013</anno>
+		<serie>Serie A2</serie>
+		<Squadre>
+			<squadra>Mens Sana Siena</squadra>
+			<squadra>Sutor Montegranaro</squadra>
+			<squadra>VuElle Pesaro</squadra>
+			<squadra>Mantova</squadra>
+		</Squadre>
+	</Campionato>
+	
+	<Campionato>
+		<anno>2013</anno>
+		<serie>Lega Gold</serie>
+		<Squadre>
+			<squadra>Dinamo Sassari</squadra>
+			<squadra>Forli</squadra>
+			<squadra>Capo d'Orlando</squadra>
+			<squadra>Brescia</squadra>
+		</Squadre>
+	</Campionato>
+	
+		<Campionato>
+		<anno>2013</anno>
+		<serie>Lega Silver</serie>
+		<Squadre>
+			<squadra>Tortona</squadra>
+			<squadra>Legnano</squadra>
+			<squadra>Cento</squadra>
+			<squadra>Pistoia</squadra>
+		</Squadre>
+	</Campionato>
+</Campionati>	
+	
+	
