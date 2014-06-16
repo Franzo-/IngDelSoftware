@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BasketSystem.Model
 {
+    //Enumerativo che descrive un campionato.
      enum Serie
     {
         Serie_A = 0,
