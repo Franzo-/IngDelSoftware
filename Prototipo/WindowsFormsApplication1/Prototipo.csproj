@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4156857-6F42-46F6-AC04-76BC1367D508}</ProjectGuid>
+    <ProjectGuid>{78ACE385-00B5-43BC-9294-2BA4DA148F76}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WindowsFormsApplication1</RootNamespace>
@@ -44,6 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Campionato.cs" />
+    <Compile Include="Serie.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
