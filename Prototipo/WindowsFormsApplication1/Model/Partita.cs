@@ -21,12 +21,12 @@ namespace BasketSystem.Model
         {
             if (data == null)
                 throw new ArgumentException(" data == null ");
-            if (giornata == null)
-                throw new ArgumentException(" giornata == null ");
-            if (puntiOspite == null)
-                throw new ArgumentException(" puntiOspite == null ");
-            if (puntiCasa == null)
-                throw new ArgumentException(" puntiCasa == null ");
+            if (giornata < 0)
+                throw new ArgumentException(" giornata < 0 ");
+            if (puntiOspite < 0)
+                throw new ArgumentException(" puntiOspite < 0 ");
+            if (puntiCasa < 0)
+                throw new ArgumentException(" puntiCasa < 0 ");
             if (casa == null)
                 throw new ArgumentException(" casa == null ");
             if (ospite == null)

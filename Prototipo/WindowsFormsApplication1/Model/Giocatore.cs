@@ -9,16 +9,14 @@ namespace BasketSystem.Model
     //Descrive l'entità giocatore all'interno del sistema.
     //Inserito il controllo per evitare set di valori null nel costruttore.
 
-    //Si possono fare altri controlli (numeri devono essere maggiori di 0, lunghezza stringhe != 0),
-    //Ma tanto è un prototipo, quindi ciccia.
     class Giocatore
     {
-        private String _nome;
-        private String _cognome;
-        private DateTime _dataDiNascita;
-        private float _altezza;
-        private float _peso;
-        private Ruolo _ruolo;
+        private readonly String _nome;
+        private readonly String _cognome;
+        private readonly DateTime _dataDiNascita;
+        private readonly float _altezza;
+        private readonly float _peso;
+        private readonly Ruolo _ruolo;
 
         public Giocatore( String nome, String cognome, DateTime dataDiNascita, float altezza, float peso, Ruolo ruolo )
         {
@@ -28,10 +26,10 @@ namespace BasketSystem.Model
                 throw new ArgumentException("cognome == null");
             if (dataDiNascita == null)
                 throw new ArgumentException("dataDiNascita == null");
-            if (altezza == null)
-                throw new ArgumentException("altezza == null");
-            if (peso == null)
-                throw new ArgumentException("peso == null");
+            if (altezza < 0)
+                throw new ArgumentException("altezza < 0");
+            if (peso < 0)
+                throw new ArgumentException("peso < 0");
             if (ruolo == null)
                 throw new ArgumentException("ruolo == null");
 

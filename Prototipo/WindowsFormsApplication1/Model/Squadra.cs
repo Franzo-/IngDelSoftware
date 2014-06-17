@@ -15,8 +15,9 @@ namespace BasketSystem.Model
         private readonly String _nome;
         private readonly String _città;
         private readonly String _impiantoDiGioco;
+
         //Il rooster contiene informazioni relative a più anni.
-        private readonly Dictionary<int, IEnumerable<Giocatore>> _rooster;
+        private Dictionary<int, HashSet<Giocatore>> _rooster;
 
         public Squadra(String nome, String città, String impiantoDiGioco )
         {
@@ -30,6 +31,8 @@ namespace BasketSystem.Model
             _nome               = nome;
             _città              = città;
             _impiantoDiGioco    = impiantoDiGioco;
+
+            _rooster            = new Dictionary<int, HashSet<Giocatore>>();
         }
 
         public String Nome
@@ -47,18 +50,18 @@ namespace BasketSystem.Model
             get { return _impiantoDiGioco; }
         }
 
-        public IEnumerable<Giocatore> getRooster(int anno)
+        public IEnumerable<Giocatore> GetRooster(int anno)
         {
             return _rooster[anno];
         }
 
         //Controllo per valori null e del tipo di raccolta passata
-        public void setRooster(int anno, HashSet<Giocatore> giocatori)
+        public void SetRooster(int anno, HashSet<Giocatore> giocatori)
         {
             if( giocatori == null || giocatori.Count == 0)
                 throw new ArgumentException(" giocatori == null ");
-            if( anno == null || anno < 0)
-                throw new ArgumentException(" giocatori == null ");
+            if( anno < 0)
+                throw new ArgumentException(" anno < 0 ");
 
             _rooster.Add(anno, giocatori);
         }

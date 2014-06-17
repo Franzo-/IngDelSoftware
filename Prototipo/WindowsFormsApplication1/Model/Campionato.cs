@@ -19,14 +19,14 @@ namespace BasketSystem.Model
 
         public Campionato(int anno, Serie serie)
         {
-            if (anno == null)
-                throw new ArgumentException(" anno == null ");
+            if (anno < 1900)
+                throw new ArgumentException(" anno < 1900 ");
             if (serie == null)
                 throw new ArgumentException(" serie == null ");
 
             _anno   = anno;
             _serie  = serie;
-
+  
         }
 
         public int Anno
@@ -39,26 +39,26 @@ namespace BasketSystem.Model
             get { return _serie; }
         }
 
+        // Applicato il micropattern delle proprietà per evitare di lanciare eccezioni
         public HashSet<Squadra> Squadre
         {
-            get { return _squadre; }
-            set 
-            {
-                if (value == null)
-                    throw new ArgumentException(" _squadre == null ");
-                _squadre = value; 
+            get { 
+                if (_squadre == null)
+                   _squadre = new HashSet<Squadra>();
+                return _squadre; 
             }
+            set { _squadre = value; }
         }
 
+        // Applicato il micropattern delle proprietà per evitare di lanciare eccezioni
         public HashSet<Partita> Partite
         {
-            get { return _calendario; }
-            set 
-            {
-                if (value == null)
-                    throw new ArgumentException(" _calendario == null ");
-                _calendario = value; 
+            get {
+                if (_calendario == null)
+                    _calendario = new HashSet<Partita>();
+                return _calendario; 
             }
+            set { _calendario = value; }
         }
 
 
