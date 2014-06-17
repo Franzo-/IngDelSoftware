@@ -21,8 +21,6 @@ namespace BasketSystem.Model
         {
             if (anno < 1900)
                 throw new ArgumentException(" anno < 1900 ");
-            if (serie == null)
-                throw new ArgumentException(" serie == null ");
 
             _anno   = anno;
             _serie  = serie;

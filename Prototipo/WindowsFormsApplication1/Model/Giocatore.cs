@@ -30,8 +30,6 @@ namespace BasketSystem.Model
                 throw new ArgumentException("altezza < 0");
             if (peso < 0)
                 throw new ArgumentException("peso < 0");
-            if (ruolo == null)
-                throw new ArgumentException("ruolo == null");
 
             _nome           = nome;
             _cognome        = cognome;
