@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <Rosters>
 	<Roster>
 		<anno>2014</anno>
@@ -71,7 +70,7 @@
 			<giocatore>Ortner</giocatore>
 			<giocatore>Nelson</giocatore>
 			<giocatore>Udom</giocatore>
-			<giocatore>Moss</giocatore>
+			<giocatore>Mos</giocatore>
 			<giocatore>Green</giocatore>
 			<giocatore>Eze</giocatore>
 		</giocatori>
@@ -616,7 +615,8 @@
 			<giocatore>Abate</giocatore>
 		</giocatori>
 	</Roster>
-</Rosters>	 
+</Rosters>
+	 
 
 				
 

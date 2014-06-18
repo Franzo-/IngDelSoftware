@@ -131,8 +131,10 @@ namespace BasketSystem.Model
 
         //private int anno;     //anno è sottointeso se le statistiche si trovano dentro a Campionato
 
-        public StatisticaSquadra(Squadra squadra, int partiteGiocate, int partiteVinte, int partitePerse)
+        public StatisticaSquadra(int punti, Squadra squadra, int partiteGiocate, int partiteVinte, int partitePerse)
         {
+            if (punti < 0)
+                throw new ArgumentException("punti < 0 ");
             if (squadra == null)
                 throw new ArgumentException("squadra == null");
             if (partiteGiocate < 0)
@@ -144,6 +146,7 @@ namespace BasketSystem.Model
 
             _squadra = squadra;
 
+            SetCampo("Punti", new CampoStatistica("Punti", punti));
             SetCampo("Partite Giocate", new CampoStatistica("Partite Giocate", partiteGiocate));
             SetCampo("Partite Vinte", new CampoStatistica("Partite Vinte", partiteVinte));
             SetCampo("Partite Perse", new CampoStatistica("Partite Perse", partitePerse));
@@ -175,8 +178,10 @@ namespace BasketSystem.Model
         private readonly Partita _partita;
         private readonly Giocatore _giocatore;
 
-        public StatisticaGiocatore(Partita partita, Giocatore giocatore, int tent2segn, int tent2tot, int tent3segn, int tent3tot, int tlSegn, int tlTot, int rimbOff, int rimbDif, int assist, int palleRec, float minGiocati)
+        public StatisticaGiocatore(int punti, Partita partita, Giocatore giocatore, int tent2segn, int tent2tot, int tent3segn, int tent3tot, int tlSegn, int tlTot, int palleRec, int minGiocati)
         {
+            if (punti < 0 )
+                throw new ArgumentException("punti < 0 ");
             if (partita == null)
                 throw new ArgumentException("partita == null");
             if (giocatore == null)
@@ -193,12 +198,6 @@ namespace BasketSystem.Model
                 throw new ArgumentException("tlSegn < 0");
             if (tlTot < 0)
                 throw new ArgumentException("tlTot < 0");
-            if (rimbOff < 0)
-                throw new ArgumentException("rimbOff < 0");
-            if (rimbDif < 0)
-                throw new ArgumentException("rimbDif < 0");
-            if (assist < 0)
-                throw new ArgumentException("assist < 0");
             if (palleRec < 0)
                 throw new ArgumentException("palleRec < 0");
             if (minGiocati < 0)
@@ -207,15 +206,13 @@ namespace BasketSystem.Model
             _partita = partita;
             _giocatore = giocatore;
 
+            SetCampo("Punti", new CampoStatistica("Punti", punti));
             SetCampo("Tentativi da 2 Segnati", new CampoStatistica("Tentativi da 2 Segnati", tent2segn));
             SetCampo("Tentativi da 2 Totali", new CampoStatistica("Tentativi da 2 Totali", tent2tot));
             SetCampo("Tentativi da 3 Segnati", new CampoStatistica("Tentativi da 3 Segnati", tent3segn));
             SetCampo("Tentativi da 3 Totali", new CampoStatistica("Tentativi da 3 Totali", tent3tot));
             SetCampo("Tiri Liberi Segnati", new CampoStatistica("Tiri Liberi Segnati", tlSegn));
             SetCampo("Tiri Liberi Totali", new CampoStatistica("Tiri Liberi Totali", tlTot));
-            SetCampo("Rimbalzi Offensivi", new CampoStatistica("Rimbalzi Offensivi", rimbOff));
-            SetCampo("Rimbalzi Difensivi", new CampoStatistica("Rimbalzi Difensivi", rimbDif));
-            SetCampo("Assist", new CampoStatistica("Assist", assist));
             SetCampo("Palle Recuperate", new CampoStatistica("Palle Recuperate", palleRec));
             SetCampo("Minuti Giocati", new CampoStatistica("Minuti Giocati", minGiocati));
 
