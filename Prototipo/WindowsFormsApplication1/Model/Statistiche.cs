@@ -131,12 +131,12 @@ namespace BasketSystem.Model
 
         //private int anno;     //anno è sottointeso se le statistiche si trovano dentro a Campionato
 
-        public StatisticaSquadra(int punti, Squadra squadra, int partiteGiocate, int partiteVinte, int partitePerse)
-        {
-            if (punti < 0)
-                throw new ArgumentException("punti < 0 ");
+        public StatisticaSquadra(Squadra squadra, int punti, int partiteGiocate, int partiteVinte, int partitePerse)
+        {            
             if (squadra == null)
                 throw new ArgumentException("squadra == null");
+            if (punti < 0)
+                throw new ArgumentException("punti < 0 ");
             if (partiteGiocate < 0)
                 throw new ArgumentException("partiteGiocate < 0");
             if (partiteVinte < 0)
@@ -178,14 +178,14 @@ namespace BasketSystem.Model
         private readonly Partita _partita;
         private readonly Giocatore _giocatore;
 
-        public StatisticaGiocatore(int punti, Partita partita, Giocatore giocatore, int tent2segn, int tent2tot, int tent3segn, int tent3tot, int tlSegn, int tlTot, int palleRec, int minGiocati)
-        {
-            if (punti < 0 )
-                throw new ArgumentException("punti < 0 ");
+        public StatisticaGiocatore(Partita partita, Giocatore giocatore, int punti, int tent2segn, int tent2tot, int tent3segn, int tent3tot, int tlSegn, int tlTot, int palleRec, int minGiocati)
+        {            
             if (partita == null)
                 throw new ArgumentException("partita == null");
             if (giocatore == null)
                 throw new ArgumentException("giocatore == null");
+            if (punti < 0)
+                throw new ArgumentException("punti < 0 ");
             if (tent2segn < 0)
                 throw new ArgumentException("tent2segn < 0");
             if (tent2tot < 0)

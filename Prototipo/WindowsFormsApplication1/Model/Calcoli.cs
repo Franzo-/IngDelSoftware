@@ -108,8 +108,8 @@ namespace BasketSystem.Model
         {
             foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
             {
-                //Cerchiamo i metodi del tipo della classe chiamante ( potrebbe una classe derivata )
-                if (type.Name == this.GetType().Name && !type.IsAbstract)
+                //Cerchiamo i metodi del tipo della classe chiamante ( potrebbe essere anche una classe derivata )
+                if (type.Name == this.GetType().Name)
                 {
                     //Esecuzione standard del metodo passato come parametro
                     MethodInfo methodInfo = type.GetMethod(metodo, new Type[] {typeof(Statistica)} );

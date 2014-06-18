@@ -49,8 +49,10 @@
     <Compile Include="Model\Calcoli.cs" />
     <Compile Include="Model\Campionato.cs" />
     <Compile Include="Model\Giocatore.cs" />
+    <Compile Include="Model\ISelezionatore.cs" />
     <Compile Include="Model\Partita.cs" />
     <Compile Include="Model\Ruolo.cs" />
+    <Compile Include="Model\SelezionatoriStatGiocatore.cs" />
     <Compile Include="Model\Serie.cs" />
     <Compile Include="Model\Squadra.cs" />
     <Compile Include="Model\Statistiche.cs" />
