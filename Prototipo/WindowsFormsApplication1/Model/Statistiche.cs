@@ -6,60 +6,64 @@ using System.Threading.Tasks;
 
 namespace BasketSystem.Model
 {
-    //TODO: deve essere comparabile
-    //struct CampoStatistica<T>
-    //    where T : IComparable
-    //{
-    //    private readonly string _nomeCampo;
-    //    private readonly T _campo;
 
-    //    public CampoStatistica(string nome, T campo)
-    //    {
-    //        if (nome == null)
-    //            throw new ArgumentException("nome == null");
-    //        if (campo == null)
-    //            throw new ArgumentException("campo == null");
-
-    //        _nomeCampo = nome;
-    //        _campo = campo;
-    //    }
-
-    //    public string Nome
-    //    {
-    //        get { return _nomeCampo; }
-    //    }
-
-    //    public T Campo
-    //    {
-    //        get { return _campo; }
-    //    } 
-
-    //}
-
-    struct CampoStatistica
+    struct CampoStatistica : IComparable 
     {
-        private readonly string _nomeCampo;
-        private readonly IComparable _campo;
+        private readonly ValueType _campo;
 
-        public CampoStatistica(string nome, IComparable campo)
+        public CampoStatistica(ValueType campo)
         {
-            if (nome == null)
-                throw new ArgumentException("nome == null");
-            if (campo == null)
-                throw new ArgumentException("campo == null");
+            if (!(campo is IComparable && (campo.GetType().IsPrimitive || campo.GetType().IsValueType)))
+                throw new ArgumentException("!(campo is IComparable && (campo.GetType().IsPrimitive " +
+                    "|| campo.GetType().IsValueType))");
 
-            _nomeCampo = nome;
             _campo = campo;
         }
 
-        public string Nome
+    #region Operatori 
+
+        //Ridefinisce l'operatore + per oggetti CampoStatistica
+        public static CampoStatistica operator +(CampoStatistica a, CampoStatistica b)
         {
-            get { return _nomeCampo; }
+            return new CampoStatistica((dynamic)a.Campo + (dynamic)b.Campo);
         }
 
-        public IComparable Campo
+        //Ridefinisce l'operatore - per oggetti CampoStatistica
+        public static CampoStatistica operator -(CampoStatistica a, CampoStatistica b)
+        {
+            return new CampoStatistica((dynamic)a.Campo - (dynamic)b.Campo);
+        }
+
+        //Ridefinisce l'operatore * per oggetti CampoStatistica
+        public static CampoStatistica operator *(CampoStatistica a, CampoStatistica b)
+        {
+            return new CampoStatistica((dynamic)a.Campo * (dynamic)b.Campo);
+        }
+
+        //Ridefinisce l'operatore / per oggetti CampoStatistica
+        public static CampoStatistica operator /(CampoStatistica a, CampoStatistica b)
+        {
+            return new CampoStatistica((dynamic)a.Campo / (dynamic)b.Campo);
+        }
+
+        #endregion
+
+        public ValueType Campo
         {
             get { return _campo; }
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null)
+                return 1;
+            if (!(obj is CampoStatistica))
+                throw new ArgumentException();
+
+            CampoStatistica cs = (CampoStatistica)obj;
+
+            //Prima casto a CampoStatistica e dopo ad IComparable perchè devo estrarre il campo
+            return ((IComparable)Campo).CompareTo((IComparable)cs.Campo);
         }
 
     }
@@ -116,7 +120,7 @@ namespace BasketSystem.Model
             Dictionary<string, CampoStatistica> newDict = new Dictionary<string, CampoStatistica>();
             foreach (KeyValuePair<string, CampoStatistica> item in this.Campi)
             {
-                newDict.Add(item.Key, new CampoStatistica(item.Value.Nome, item.Value.Campo));
+                newDict.Add(item.Key, new CampoStatistica(item.Value.Campo));
             }
             return newDict;
         }
@@ -146,10 +150,10 @@ namespace BasketSystem.Model
 
             _squadra = squadra;
 
-            SetCampo("Punti", new CampoStatistica("Punti", punti));
-            SetCampo("Partite Giocate", new CampoStatistica("Partite Giocate", partiteGiocate));
-            SetCampo("Partite Vinte", new CampoStatistica("Partite Vinte", partiteVinte));
-            SetCampo("Partite Perse", new CampoStatistica("Partite Perse", partitePerse));
+            SetCampo("Punti", new CampoStatistica(punti));
+            SetCampo("Partite Giocate", new CampoStatistica(partiteGiocate));
+            SetCampo("Partite Vinte", new CampoStatistica(partiteVinte));
+            SetCampo("Partite Perse", new CampoStatistica(partitePerse));
             
         }
 
@@ -206,15 +210,15 @@ namespace BasketSystem.Model
             _partita = partita;
             _giocatore = giocatore;
 
-            SetCampo("Punti", new CampoStatistica("Punti", punti));
-            SetCampo("Tentativi da 2 Segnati", new CampoStatistica("Tentativi da 2 Segnati", tent2segn));
-            SetCampo("Tentativi da 2 Totali", new CampoStatistica("Tentativi da 2 Totali", tent2tot));
-            SetCampo("Tentativi da 3 Segnati", new CampoStatistica("Tentativi da 3 Segnati", tent3segn));
-            SetCampo("Tentativi da 3 Totali", new CampoStatistica("Tentativi da 3 Totali", tent3tot));
-            SetCampo("Tiri Liberi Segnati", new CampoStatistica("Tiri Liberi Segnati", tlSegn));
-            SetCampo("Tiri Liberi Totali", new CampoStatistica("Tiri Liberi Totali", tlTot));
-            SetCampo("Palle Recuperate", new CampoStatistica("Palle Recuperate", palleRec));
-            SetCampo("Minuti Giocati", new CampoStatistica("Minuti Giocati", minGiocati));
+            SetCampo("Punti", new CampoStatistica(punti));
+            SetCampo("Tentativi da 2 Segnati", new CampoStatistica(tent2segn));
+            SetCampo("Tentativi da 2 Totali", new CampoStatistica(tent2tot));
+            SetCampo("Tentativi da 3 Segnati", new CampoStatistica(tent3segn));
+            SetCampo("Tentativi da 3 Totali", new CampoStatistica(tent3tot));
+            SetCampo("Tiri Liberi Segnati", new CampoStatistica(tlSegn));
+            SetCampo("Tiri Liberi Totali", new CampoStatistica(tlTot));
+            SetCampo("Palle Recuperate", new CampoStatistica(palleRec));
+            SetCampo("Minuti Giocati", new CampoStatistica(minGiocati));
 
         }
 

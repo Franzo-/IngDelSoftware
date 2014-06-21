@@ -16,16 +16,18 @@ namespace BasketSystem.Model
     {
         static private class CalcoloUtility
         {
+            //Nota:
+            //  è possibile svolgere i calcoli in maniera semplificata grazie 
+            //  alla ridefinizione dell'operatore in CampoStatistiche.
+
             internal static float Media(int campoPrimo, int campoSecondo)
             {
-                //campoPrimo diviso campoSecondo
-                return ((float)campoPrimo) / ((float)campoSecondo);
+                return campoPrimo / campoSecondo;
             }
 
             internal static float Percentuale(int campoParziale, int campoTotale)
             {
-                //Percentuale
-                return (((float)campoParziale) * 100) / ((float)campoTotale);
+                return (campoParziale * 100) / campoTotale;
             }
 
         }
@@ -35,7 +37,7 @@ namespace BasketSystem.Model
             float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Partite Vinte").Campo, 
                                                                 (int)statistica.GetCampo("Partite Giocate").Campo);
 
-            statistica.SetCampo("Percentuale vittorie squadra", new CampoStatistica("Percentuale Vittorie Squadra", percentuale));
+            statistica.SetCampo("Percentuale vittorie squadra", new CampoStatistica(percentuale));
         }
 
         public void PercentualeSconfitteSquadra(StatisticaSquadra statistica)
@@ -43,16 +45,15 @@ namespace BasketSystem.Model
             float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Partite Perse").Campo,
                                                                 (int)statistica.GetCampo("Partite Giocate").Campo);
 
-            statistica.SetCampo("Percentuale sconfitte squadra", new CampoStatistica("Percentuale Sconfitte Squadra", percentuale));
+            statistica.SetCampo("Percentuale sconfitte squadra", new CampoStatistica(percentuale));
         }
 
         public void MediaPuntiSquadra(StatisticaSquadra statistica)
         {
-            //float media = ((float) statistica.GetCampo("Punti").Campo) / ((float) statistica.GetCampo("Partite Giocate").Campo);
             float media = CalcoloUtility.Media((int)statistica.GetCampo("Punti").Campo,
                                                     (int)statistica.GetCampo("Partite Giocate").Campo);
 
-            statistica.SetCampo("Media Punti Squadra", new CampoStatistica("Media Punti Squadra", media));
+            statistica.SetCampo("Media Punti Squadra", new CampoStatistica(media));
         }
 
         public void PercentualeTiriDaDue(StatisticaGiocatore statistica)
@@ -60,7 +61,7 @@ namespace BasketSystem.Model
             float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Tentativi Da 2 Segnati").Campo,
                                                                 (int)statistica.GetCampo("Tentativi Da 2 Totali").Campo);
 
-            statistica.SetCampo("Percentuale Tiri Da 2 Segnati", new CampoStatistica("Percentuale Tiri Da 2 Segnati", percentuale));
+            statistica.SetCampo("Percentuale Tiri Da 2 Segnati", new CampoStatistica(percentuale));
         }
 
         public void PercentualeTiriDaTre(StatisticaGiocatore statistica)
@@ -68,7 +69,7 @@ namespace BasketSystem.Model
             float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Tentativi Da 3 Segnati").Campo,
                                                                 (int)statistica.GetCampo("Tentativi Da 3 Totali").Campo);
 
-            statistica.SetCampo("Percentuale Tiri Da 3 Segnati", new CampoStatistica("Percentuale Tiri Da 3 Segnati", percentuale));
+            statistica.SetCampo("Percentuale Tiri Da 3 Segnati", new CampoStatistica(percentuale));
         }
 
         public void PercentualeTiri(StatisticaGiocatore statistica)
@@ -84,7 +85,7 @@ namespace BasketSystem.Model
 
             float percentuale = CalcoloUtility.Percentuale(tiriSegnati, tiriTotali);
 
-            statistica.SetCampo("Percentuale Tiri Segnati", new CampoStatistica("Percentuale Tiri Segnati", percentuale));
+            statistica.SetCampo("Percentuale Tiri Segnati", new CampoStatistica(percentuale));
         }
 
         public void MediaPuntiPerMinuto(StatisticaGiocatore statistica)
@@ -92,7 +93,7 @@ namespace BasketSystem.Model
             float media = CalcoloUtility.Media((int)statistica.GetCampo("Punti").Campo,
                                                     (int)statistica.GetCampo("Minuti Giocati").Campo);
 
-            statistica.SetCampo("Punti Per Minuto", new CampoStatistica("Punti Per Minuto", media));
+            statistica.SetCampo("Punti Per Minuto", new CampoStatistica(media));
         }
 
         public void MediaRecuperiPerMinuto(StatisticaGiocatore statistica)
@@ -100,7 +101,7 @@ namespace BasketSystem.Model
             float media = CalcoloUtility.Media((int)statistica.GetCampo("Palle Recuperate").Campo,
                                                     (int)statistica.GetCampo("Minuti Giocati").Campo);
 
-            statistica.SetCampo("Palle Recuperate Per Minuto", new CampoStatistica("Palle Recuperate Per Minuto", media));
+            statistica.SetCampo("Palle Recuperate Per Minuto", new CampoStatistica(media));
         }
 
 

@@ -14,11 +14,11 @@ namespace BasketSystem.Model
         private readonly String _nome;
         private readonly String _cognome;
         private readonly DateTime _dataDiNascita;
-        private readonly float _altezza;
-        private readonly float _peso;
+        private readonly int _altezza;
+        private readonly int _peso;
         private readonly Ruolo _ruolo;
 
-        public Giocatore( String nome, String cognome, DateTime dataDiNascita, float altezza, float peso, Ruolo ruolo )
+        public Giocatore(String nome, String cognome, DateTime dataDiNascita, int altezza, int peso, Ruolo ruolo)
         {
             if (nome == null)
                 throw new ArgumentException("nome == null");
@@ -54,12 +54,12 @@ namespace BasketSystem.Model
             get { return _dataDiNascita; }
         }
 
-        public float Peso
+        public int Peso
         {
             get { return _peso; }
         }
 
-        public float Altezza
+        public int Altezza
         {
             get { return _altezza; }
         }
