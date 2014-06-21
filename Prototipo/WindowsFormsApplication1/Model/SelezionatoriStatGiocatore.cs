@@ -6,46 +6,86 @@ using System.Threading.Tasks;
 
 namespace BasketSystem.Model
 {
-    abstract class SelezionatoreStatGiocatore : ISelezionatore
+    abstract class SelezionatoreStatGiocBase : ISelezionatore
     {
-        private readonly SelezionatoreStatGiocatore _selezionatore;
-
-        public readonly static SelezionatoreStatGiocatore SelezionatoreTutteStatGiocatori;  //TODO
-
-        protected SelezionatoreStatGiocatore(SelezionatoreStatGiocatore selezionatore)
-        {
-            _selezionatore = selezionatore ?? SelezionatoreTutteStatGiocatori;
-        }
 
         public IEnumerable<Statistica> GetStatistiche()
         {
+
+            //TODO: NORMALIZZAZIONE!!!
+
             return GetStatisticheGiocatore();
         }
 
-        protected virtual IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
+        public abstract IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore();
+    }
+
+    abstract class SelezionatoreStatGiocatore : SelezionatoreStatGiocBase
+    {
+        private readonly SelezionatoreStatGiocBase _selezionatore;
+
+        protected SelezionatoreStatGiocatore(SelezionatoreStatGiocBase selezionatore)
+        {
+            if (selezionatore == null)
+                throw new ArgumentException("selezionatore == null!");
+
+            _selezionatore = selezionatore;
+        }
+
+
+        protected IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
         {
             return _selezionatore.GetStatisticheGiocatore().Where(Predicate);
         }
 
-        //Predicato di default che non filtra nulla; virtual perché può non essere ridefinito
-        protected virtual Func<StatisticaGiocatore, bool> Predicate 
+        protected abstract Func<StatisticaGiocatore, bool> Predicate { get; }
+
+    }
+
+    class SelezionatoreTutteStatGiocatori : SelezionatoreStatGiocBase
+    {
+
+        protected override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
         {
-            get { return statistica => true; } 
+            //TODO: espressione LINQ?
+            return /* GetCurrentCampionato.GetStatistiche */;
         }
 
-        private class _SelezionatoreTutteStatGiocatori : SelezionatoreStatGiocatore
+    }
+
+    class SelezionatoreStatGiocatorePerPartita : SelezionatoreStatGiocatore
+    {
+        private readonly Partita _partita;
+
+        public SelezionatoreStatGiocatorePerPartita(SelezionatoreStatGiocBase selezionatore, Partita partita) : base(selezionatore)
         {
+            if (partita == null)
+                throw new ArgumentException("partita == null");
+            _partita = partita;
+        }
 
-            public _SelezionatoreTutteStatGiocatori()
-            {
-                _selezionatore = null;
-            }
+        protected override Func<StatisticaGiocatore, bool> Predicate
+        {
+            get { return statistica => statistica.Partita == _partita; }
+        }
+    }
 
-            protected override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
-            {
-                return base.GetStatisticheGiocatore();
-            }
-            
+    class SelezionatoreStatGiocatorePerSquadra : SelezionatoreStatGiocatore
+    {
+        private readonly Squadra _squadra;
+
+        public SelezionatoreStatGiocatorePerSquadra(SelezionatoreStatGiocBase selezionatore, Squadra squadra) : base(selezionatore)
+        {
+              if (squadra == null)
+                  throw new ArgumentException("squadra == null");
+
+              _squadra = squadra;
+        }
+
+        protected override Func<StatisticaGiocatore, bool> Predicate
+        {
+            //TODO
+            get { return statistica => _squadra.GetRooster(/* GetCurrentCampionato.Anno */).Contains(statistica.Giocatore); }
         }
     }
 }
