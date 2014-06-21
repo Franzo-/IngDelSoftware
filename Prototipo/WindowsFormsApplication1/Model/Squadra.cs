@@ -65,5 +65,10 @@ namespace BasketSystem.Model
 
             _rooster.Add(anno, giocatori);
         }
+
+        public override String ToString()
+        {
+            return Nome;
+        }
     }
 }

@@ -12,9 +12,42 @@ namespace BasketSystem.Model
         public IEnumerable<Statistica> GetStatistiche()
         {
 
-            //TODO: NORMALIZZAZIONE!!!
+            return Normalize( GetStatisticheGiocatore() );
+        }
 
-            return GetStatisticheGiocatore();
+        private IEnumerable<StatisticaGiocatore> Normalize(IEnumerable<StatisticaGiocatore> stats)
+        {
+            Dictionary<Giocatore, StatisticaGiocatore> dizionario = new Dictionary<Giocatore, StatisticaGiocatore>();
+
+            //Variabili d'appoggio
+            StatisticaGiocatore statistica = null;
+
+
+            foreach (StatisticaGiocatore stat in stats)
+            {
+                //Se c'è già
+                if (dizionario.Keys.Contains<Giocatore>(stat.Giocatore))
+                {
+                    statistica = dizionario[stat.Giocatore];
+
+                    foreach (String nomeCampo in statistica.GetNomiCampi())
+                    {
+                        statistica.SetCampo(nomeCampo, statistica.GetCampo(nomeCampo) + stat.GetCampo(nomeCampo));
+                    }
+                    dizionario[statistica.Giocatore] = statistica;
+
+                }
+
+
+                //Se non c'è ancora
+                else
+                {
+                    dizionario.Add(stat.Giocatore, stat);
+                }
+
+            }
+
+            return dizionario.Values;
         }
 
         public abstract IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore();

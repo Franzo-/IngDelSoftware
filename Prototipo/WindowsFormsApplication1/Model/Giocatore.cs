@@ -68,5 +68,10 @@ namespace BasketSystem.Model
         {
             get { return _ruolo; }
         }
+
+        public override String ToString()
+        {
+            return Nome + " " + Cognome;
+        }
     }
 }
