@@ -15,6 +15,7 @@ namespace BasketSystem.Model
         private readonly int _anno;
         private HashSet<Squadra> _squadre;
         private HashSet<Partita> _calendario;
+        private List<Statistica> _statistiche;
         private readonly Serie _serie;
 
         public Campionato(int anno, Serie serie)
@@ -59,9 +60,18 @@ namespace BasketSystem.Model
             set { _calendario = value; }
         }
 
-
-
-        //Utility
+        // Applicato il micropattern delle proprietà per evitare di lanciare eccezioni
+        public List<Statistica> Statistiche 
+        {
+            get
+            {
+                if (_statistiche == null)
+                    _statistiche = new List<Statistica>();
+                return _statistiche;
+            }
+            set { _statistiche = value; } 
+        }
+        
 
 
     }
