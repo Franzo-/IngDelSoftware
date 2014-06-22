@@ -20,92 +20,92 @@ namespace BasketSystem.Model
             //  è possibile svolgere i calcoli in maniera semplificata grazie 
             //  alla ridefinizione dell'operatore in CampoStatistiche.
 
-            internal static float Media(int campoPrimo, int campoSecondo)
+            internal static CampoStatistica Media(CampoStatistica campoPrimo, CampoStatistica campoSecondo)
             {
                 return campoPrimo / campoSecondo;
             }
 
-            internal static float Percentuale(int campoParziale, int campoTotale)
+            internal static CampoStatistica Percentuale(CampoStatistica campoParziale, CampoStatistica campoTotale)
             {
-                return (campoParziale * 100) / campoTotale;
+                return (campoParziale * new CampoStatistica(100.0)) / campoTotale;
             }
 
         }
 
         public void PercentualeVittorieSquadra(StatisticaSquadra statistica)
         {
-            float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Partite Vinte").Campo, 
-                                                                (int)statistica.GetCampo("Partite Giocate").Campo);
+            CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Partite Vinte"), 
+                                                                statistica.GetCampo("Partite Giocate"));
 
-            statistica.SetCampo("Percentuale vittorie squadra", new CampoStatistica(percentuale));
+            statistica.SetCampo("Percentuale vittorie squadra", percentuale );
         }
 
         public void PercentualeSconfitteSquadra(StatisticaSquadra statistica)
         {
-            float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Partite Perse").Campo,
-                                                                (int)statistica.GetCampo("Partite Giocate").Campo);
+            CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Partite Perse"),
+                                                                statistica.GetCampo("Partite Giocate"));
 
-            statistica.SetCampo("Percentuale sconfitte squadra", new CampoStatistica(percentuale));
+            statistica.SetCampo("Percentuale sconfitte squadra", percentuale);
         }
 
         public void MediaPuntiSquadra(StatisticaSquadra statistica)
         {
-            float media = CalcoloUtility.Media((int)statistica.GetCampo("Punti").Campo,
-                                                    (int)statistica.GetCampo("Partite Giocate").Campo);
+            CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Punti"),
+                                                    statistica.GetCampo("Partite Giocate"));
 
-            statistica.SetCampo("Media Punti Squadra", new CampoStatistica(media));
+            statistica.SetCampo("Media Punti Squadra", media );
         }
 
         public void PercentualeTiriDaDue(StatisticaGiocatore statistica)
         {
-            float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Tentativi Da 2 Segnati").Campo,
-                                                                (int)statistica.GetCampo("Tentativi Da 2 Totali").Campo);
+            CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Tentativi Da 2 Segnati"),
+                                                                statistica.GetCampo("Tentativi Da 2 Totali"));
 
             statistica.SetCampo("Percentuale Tiri Da 2 Segnati", new CampoStatistica(percentuale));
         }
 
         public void PercentualeTiriDaTre(StatisticaGiocatore statistica)
         {
-            float percentuale = CalcoloUtility.Percentuale((int)statistica.GetCampo("Tentativi Da 3 Segnati").Campo,
-                                                                (int)statistica.GetCampo("Tentativi Da 3 Totali").Campo);
+            CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Tentativi Da 3 Segnati"),
+                                                                statistica.GetCampo("Tentativi Da 3 Totali"));
 
             statistica.SetCampo("Percentuale Tiri Da 3 Segnati", new CampoStatistica(percentuale));
         }
 
         public void PercentualeTiri(StatisticaGiocatore statistica)
         {
-            int tiriSegnati = 0;
-            int tiriTotali = 0;
+            CampoStatistica tiriSegnati = new CampoStatistica(0);
+            CampoStatistica tiriTotali = new CampoStatistica(0);
 
-            tiriSegnati += (int)statistica.GetCampo("Tentativi Da 3 Segnati").Campo + (int)statistica.GetCampo("Tentativi Da 2 Segnati").Campo + 
-                 (int)statistica.GetCampo("Tiri Liberi Segnati").Campo;
+            tiriSegnati = statistica.GetCampo("Tentativi Da 3 Segnati") + statistica.GetCampo("Tentativi Da 2 Segnati") + 
+                 statistica.GetCampo("Tiri Liberi Segnati");
 
-            tiriTotali += (int)statistica.GetCampo("Tentativi Da 3 Totali").Campo + (int)statistica.GetCampo("Tentativi Da 2 Totali").Campo +
-                 (int)statistica.GetCampo("Tiri Liberi Totali").Campo;
+            tiriTotali = statistica.GetCampo("Tentativi Da 3 Totali") + statistica.GetCampo("Tentativi Da 2 Totali") +
+                 statistica.GetCampo("Tiri Liberi Totali");
 
-            float percentuale = CalcoloUtility.Percentuale(tiriSegnati, tiriTotali);
+            CampoStatistica percentuale = CalcoloUtility.Percentuale(tiriSegnati, tiriTotali);
 
             statistica.SetCampo("Percentuale Tiri Segnati", new CampoStatistica(percentuale));
         }
 
         public void MediaPuntiPerMinuto(StatisticaGiocatore statistica)
         {
-            float media = CalcoloUtility.Media((int)statistica.GetCampo("Punti").Campo,
-                                                    (int)statistica.GetCampo("Minuti Giocati").Campo);
+            CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Punti"),
+                                                    statistica.GetCampo("Minuti Giocati"));
 
             statistica.SetCampo("Punti Per Minuto", new CampoStatistica(media));
         }
 
         public void MediaRecuperiPerMinuto(StatisticaGiocatore statistica)
         {
-            float media = CalcoloUtility.Media((int)statistica.GetCampo("Palle Recuperate").Campo,
-                                                    (int)statistica.GetCampo("Minuti Giocati").Campo);
+            CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Palle Recuperate"),
+                                                    statistica.GetCampo("Minuti Giocati"));
 
             statistica.SetCampo("Palle Recuperate Per Minuto", new CampoStatistica(media));
         }
 
 
-        void Visit(Statistica statistica, string metodo)
+        public void Visit(Statistica statistica, string metodo)
         {
             foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
             {
