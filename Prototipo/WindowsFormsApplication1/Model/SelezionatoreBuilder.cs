@@ -8,24 +8,22 @@ namespace BasketSystem.Model
 {
     static class SelezionatoreBuilder
     {
-        private readonly static SelezionatoreTutteStatSquadra SelezionatoreTutteStatSquadra = new SelezionatoreTutteStatSquadra();
-        private readonly static SelezionatoreTutteStatGiocatori SelezionatoreTutteStatGiocatore = new SelezionatoreTutteStatGiocatori();
 
-        public static ISelezionatore Build(Type tipo, Squadra squadra = null, Partita partita = null)
+        public static ISelezionatore Build(Type tipo, Campionato campionato, Squadra squadra = null, Partita partita = null)
         {
             ISelezionatore result = null;
 
             if (tipo == typeof(StatisticaSquadra))
             {
-                result = SelezionatoreTutteStatSquadra;
+                result = new SelezionatoreTutteStatSquadra(campionato);
             }
             else if (tipo == typeof(StatisticaGiocatore))
             {
-                result = SelezionatoreTutteStatGiocatore;
+                result = new SelezionatoreTutteStatGiocatori(campionato);
 
                 if (squadra != null)
                 {
-                    result = new SelezionatoreStatGiocatorePerSquadra((SelezionatoreStatGiocBase) result, squadra);
+                    result = new SelezionatoreStatGiocatorePerSquadra((SelezionatoreStatGiocBase) result, squadra, campionato.Anno);
                 }
                 if (partita != null)
                 {

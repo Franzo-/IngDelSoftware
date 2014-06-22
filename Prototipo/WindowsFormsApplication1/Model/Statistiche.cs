@@ -112,10 +112,19 @@ namespace BasketSystem.Model
 
         #region IClonable
 
-        abstract public object Clone();
+        public object Clone()
+        {
+            //Shallow copy dei riferimenti
+            Statistica newStatistica = (Statistica)this.MemberwiseClone();
+
+            //Deep copy del dizionario
+            newStatistica.Campi = CampiClone();
+
+            return newStatistica;
+        }
 
         //Deep copy del dizionario
-        protected Dictionary<string, CampoStatistica> CampiClone()
+        private Dictionary<string, CampoStatistica> CampiClone()
         {
             Dictionary<string, CampoStatistica> newDict = new Dictionary<string, CampoStatistica>();
             foreach (KeyValuePair<string, CampoStatistica> item in this.Campi)
@@ -131,10 +140,9 @@ namespace BasketSystem.Model
 
     class StatisticaSquadra : Statistica
     {
+
         private readonly Squadra _squadra;
-
-        //private int anno;     //anno è sottointeso se le statistiche si trovano dentro a Campionato
-
+        
         public StatisticaSquadra(Squadra squadra, int punti, int partiteGiocate, int partiteVinte, int partitePerse)
         {            
             if (squadra == null)
@@ -162,18 +170,6 @@ namespace BasketSystem.Model
             get { return _squadra; }
         }
 
-        #region IClonable
-        public override object Clone()
-        {
-            //Shallow copy dei riferimenti
-            StatisticaSquadra newStatistica = (StatisticaSquadra)this.MemberwiseClone();
-
-            //Deep copy del dizionario
-            newStatistica.Campi = CampiClone();
-
-            return newStatistica;
-        } 
-        #endregion
     }
 
     class StatisticaGiocatore : Statistica
@@ -247,17 +243,5 @@ namespace BasketSystem.Model
             return result;
         }
 
-        #region IClonable
-        public override object Clone()
-        {
-            //Shallow copy dei riferimenti
-            StatisticaGiocatore newStatistica = (StatisticaGiocatore)this.MemberwiseClone();
-
-            //Deep copy del dizionario
-            newStatistica.Campi = CampiClone();
-
-            return newStatistica;
-        } 
-        #endregion
     }
 }

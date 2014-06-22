@@ -66,7 +66,7 @@ namespace BasketSystem.Model
         }
 
 
-        protected IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
+        public override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
         {
             return _selezionatore.GetStatisticheGiocatore().Where(Predicate);
         }
@@ -77,11 +77,22 @@ namespace BasketSystem.Model
 
     class SelezionatoreTutteStatGiocatori : SelezionatoreStatGiocBase
     {
+        private readonly Campionato _campionato;
 
-        protected override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
+        public SelezionatoreTutteStatGiocatori(Campionato campionato)
         {
-            //TODO: espressione LINQ?
-            return /* GetCurrentCampionato.GetStatistiche */;
+            if (campionato == null)
+                throw new ArgumentException("campionato == null");
+
+            _campionato = campionato;
+        }
+
+        public override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
+        {
+            // LINQ
+            return from stat in _campionato.Statistiche
+                   where stat.GetType() == typeof(StatisticaGiocatore)
+                   select (StatisticaGiocatore)stat;
         }
 
     }
@@ -106,19 +117,22 @@ namespace BasketSystem.Model
     class SelezionatoreStatGiocatorePerSquadra : SelezionatoreStatGiocatore
     {
         private readonly Squadra _squadra;
+        private readonly int _anno;
 
-        public SelezionatoreStatGiocatorePerSquadra(SelezionatoreStatGiocBase selezionatore, Squadra squadra) : base(selezionatore)
+        public SelezionatoreStatGiocatorePerSquadra(SelezionatoreStatGiocBase selezionatore, Squadra squadra, int anno) : base(selezionatore)
         {
               if (squadra == null)
                   throw new ArgumentException("squadra == null");
+              if (anno < 1900)
+                  throw new ArgumentException(" anno < 1900 ");
 
               _squadra = squadra;
+              _anno = anno;
         }
 
         protected override Func<StatisticaGiocatore, bool> Predicate
         {
-            //TODO
-            get { return statistica => _squadra.GetRooster(/* GetCurrentCampionato.Anno */).Contains(statistica.Giocatore); }
+            get { return statistica => _squadra.GetRooster(_anno).Contains(statistica.Giocatore); }
         }
     }
 }

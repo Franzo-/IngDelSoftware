@@ -10,8 +10,23 @@ namespace BasketSystem.Model
     {
         private IEnumerable<Statistica> _statistiche;
         private ISelezionatore _selezionatore;
+        private ICalcoloVisitor _visitor;
+
+        private static Classifica _instance;
 
         public event EventHandler Changed;
+
+        private Classifica()
+        {
+
+        }
+
+        public static Classifica GetInstance()
+        {
+            if (_instance == null)
+                _instance = new Classifica();
+            return _instance;
+        }
 
         public ISelezionatore Selezionatore
         {
@@ -26,6 +41,17 @@ namespace BasketSystem.Model
             }
         }
 
+        public ICalcoloVisitor Visitor
+        {
+            get 
+            {
+                if (_visitor == null)
+                    _visitor = new CalcoloVisitor();
+                return _visitor; 
+            }
+            set { _visitor = value; }
+        }
+
         public IEnumerable<Statistica> GetStatistiche() 
         {
             if (_statistiche == null)
@@ -33,6 +59,14 @@ namespace BasketSystem.Model
                 _statistiche = _selezionatore.GetStatistiche();
             }
             return _statistiche;
+        }
+
+        public void EseguiCalcolo(string nomeMetodo)
+        {
+            foreach (Statistica statistica in GetStatistiche())
+            {
+                statistica.Accept(Visitor, nomeMetodo);
+            }
         }
 
         public void Invalidate()

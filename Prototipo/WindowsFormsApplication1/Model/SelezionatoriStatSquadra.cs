@@ -18,10 +18,22 @@ namespace BasketSystem.Model
 
     class SelezionatoreTutteStatSquadra : SelezionatoreStatSquadraBase
     {
+        private readonly Campionato _campionato;
+
+        public SelezionatoreTutteStatSquadra(Campionato campionato)
+        {
+            if (campionato == null)
+                throw new ArgumentException("campionato == null");
+
+            _campionato = campionato;
+        }
+
         public override IEnumerable<StatisticaSquadra> GetStatisticheSquadra()
         {
-            //TODO: espressione LINQ?
-            return /* GetCurrentCampionato.GetStatistiche */;
+            // LINQ
+            return from stat in _campionato.Statistiche
+                   where stat.GetType() == typeof(StatisticaSquadra)
+                   select (StatisticaSquadra) stat;
         }
     }
 }

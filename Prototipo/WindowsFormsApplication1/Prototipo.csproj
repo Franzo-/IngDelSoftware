@@ -48,6 +48,8 @@
   <ItemGroup>
     <Compile Include="Model\Calcoli.cs" />
     <Compile Include="Model\Campionato.cs" />
+    <Compile Include="Model\Classifica.cs" />
+    <Compile Include="Model\Database.cs" />
     <Compile Include="Model\Giocatore.cs" />
     <Compile Include="Model\ISelezionatore.cs" />
     <Compile Include="Model\Partita.cs" />

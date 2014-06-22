@@ -8,44 +8,46 @@ namespace BasketSystem.Model
 {
     class Database
     {
-        private List<Squadra> _squadre;
-        private List<Giocatore> _giocatori;
-        private List<Campionato> _campionati;
+        private HashSet<Squadra> _squadre;
+        private HashSet<Giocatore> _giocatori;
+        private HashSet<Campionato> _campionati;
 
         private static Database _instance;
 
+
+        //La classe è da considerarsi come un Singleton
+        private Database()
+        {
+            _squadre = new HashSet<Squadra>();
+            _giocatori = new HashSet<Giocatore>();
+            _campionati = new HashSet<Campionato>();
+        }
+
+        public static Database GetInstance()
+        {
+            if (_instance == null)
+                _instance = new Database();
+            return _instance;
+        }
+
         
-        public List<Squadra> Squadre
+        public HashSet<Squadra> Squadre
         {
             get { return _squadre; }
             set { _squadre = value; }
         }
 
-        public List<Campionato> Campionati
+        public HashSet<Campionato> Campionati
         {
             get { return _campionati; }
             set { _campionati = value; }
         }
 
-        public List<Giocatore> Giocatori
+        public HashSet<Giocatore> Giocatori
         {
             get { return _giocatori; }
             set { _giocatori = value; }
         }
 
-        //La classe è da considerarsi come un Singleton
-        private Database()
-        {
-            _squadre = new List<Squadra>();
-            _giocatori = new List<Giocatore>();
-            _campionati = new List<Campionato>();
-        }
-
-        public Database GetInstance()
-        {
-            if( _instance==null)
-                _instance = new Database();
-            return _instance;
-        }
     }
 }
