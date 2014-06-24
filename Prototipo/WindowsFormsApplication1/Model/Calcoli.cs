@@ -32,6 +32,8 @@ namespace BasketSystem.Model
 
         }
 
+        //Attributo Custom
+        [Custom("Partite Vinte", "StatisticaSquadra")]
         public void PercentualeVittorieSquadra(StatisticaSquadra statistica)
         {
             CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Partite Vinte"), 
@@ -40,6 +42,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Percentuale vittorie squadra", percentuale );
         }
 
+        //Attributo Custom
+        [Custom("Partite Perse", "StatisticaSquadra")]
         public void PercentualeSconfitteSquadra(StatisticaSquadra statistica)
         {
             CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Partite Perse"),
@@ -48,6 +52,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Percentuale sconfitte squadra", percentuale);
         }
 
+        //Attributo Custom
+        [Custom("Punti", "StatisticaSquadra")]
         public void MediaPuntiSquadra(StatisticaSquadra statistica)
         {
             CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Punti"),
@@ -56,6 +62,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Media Punti Squadra", media );
         }
 
+        //Attributo Custom
+        [Custom("Tentativi Da 2 Segnati", "StatisticaGiocatore")]
         public void PercentualeTiriDaDue(StatisticaGiocatore statistica)
         {
             CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Tentativi Da 2 Segnati"),
@@ -64,6 +72,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Percentuale Tiri Da 2 Segnati", new CampoStatistica(percentuale));
         }
 
+        //Attributo Custom
+        [Custom("Tentativi Da 3 Segnati", "StatisticaGiocatore")]
         public void PercentualeTiriDaTre(StatisticaGiocatore statistica)
         {
             CampoStatistica percentuale = CalcoloUtility.Percentuale(statistica.GetCampo("Tentativi Da 3 Segnati"),
@@ -72,6 +82,11 @@ namespace BasketSystem.Model
             statistica.SetCampo("Percentuale Tiri Da 3 Segnati", new CampoStatistica(percentuale));
         }
 
+        
+        //Attributo Custom
+        [Custom("Tentativi Da 2 Segnati", "StatisticaGiocatore")]
+        [Custom("Tentativi Da 3 Segnati", "StatisticaGiocatore")]
+        [Custom("Tiri Liberi Totali", "StatisticaGiocatore")]
         public void PercentualeTiri(StatisticaGiocatore statistica)
         {
             CampoStatistica tiriSegnati = new CampoStatistica(0);
@@ -88,6 +103,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Percentuale Tiri Segnati", new CampoStatistica(percentuale));
         }
 
+        //Attributo Custom
+        [Custom("Punti", "StatisticaGiocatore")]
         public void MediaPuntiPerMinuto(StatisticaGiocatore statistica)
         {
             CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Punti"),
@@ -96,6 +113,8 @@ namespace BasketSystem.Model
             statistica.SetCampo("Punti Per Minuto", new CampoStatistica(media));
         }
 
+        //Attributo Custom
+        [Custom("Palle Recuperate", "StatisticaGiocatore")]
         public void MediaRecuperiPerMinuto(StatisticaGiocatore statistica)
         {
             CampoStatistica media = CalcoloUtility.Media(statistica.GetCampo("Palle Recuperate"),
