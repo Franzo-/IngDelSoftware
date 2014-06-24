@@ -52,6 +52,7 @@
     <Compile Include="Model\CustomAttribute.cs" />
     <Compile Include="Model\Database.cs" />
     <Compile Include="Model\Giocatore.cs" />
+    <Compile Include="Model\ILoader.cs" />
     <Compile Include="Model\ISelezionatore.cs" />
     <Compile Include="Model\Partita.cs" />
     <Compile Include="Model\Ruolo.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Model\Serie.cs" />
     <Compile Include="Model\Squadra.cs" />
     <Compile Include="Model\Statistiche.cs" />
+    <Compile Include="Persistence\Loader.cs" />
     <Compile Include="Presentation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -71,7 +71,8 @@ namespace BasketSystem.Model
 
         public override String ToString()
         {
-            return Nome + " " + Cognome;
+            return Nome + " " + Cognome + "\n" + "Data: " + DataDiNascita + "\n" + "Altezza: "+ Altezza +"\nPeso: "+ 
+                + Peso+"\nRuolo: "+Ruolo;
         }
     }
 }

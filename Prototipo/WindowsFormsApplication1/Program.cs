@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using BasketSystem.Presentation;
+using BasketSystem.Persistence;
 
 namespace BasketSystem
 {
@@ -16,9 +17,11 @@ namespace BasketSystem
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new MainForm());
+            Loader loader = new Loader();
+            loader.Load();
         }
     }
 }

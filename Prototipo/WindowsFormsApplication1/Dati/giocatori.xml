@@ -175,7 +175,7 @@
 		<nascita>30-12-1988</nascita>
 		<peso>88</peso>
 		<altezza>204</altezza>
-		<ruolo>c</ruolo>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
 		<cognome>Ebi</cognome>
@@ -193,7 +193,6 @@
 		<altezza>195</altezza>
 		<ruolo>AP</ruolo>
 	</giocatore>
-
 <!-- 3 Milano-->
 	<giocatore>
 		<cognome>Gentile</cognome>
@@ -291,10 +290,7 @@
 		<altezza>192</altezza>
 		<ruolo>PM</ruolo>
 	</giocatore>
-
-
 <!-- 4 SIENA-->
-
 	<giocatore>
 		<cognome>Viggiano</cognome>
 		<nome>Simone</nome>
@@ -391,9 +387,7 @@
 		<altezza>202</altezza>
 		<ruolo>C</ruolo>
 	</giocatore>
-	
 	<!-- 5 Virtus Roma-->
-	
 	<giocatore>
 		<cognome>Goss</cognome>
 		<nome>Andrew</nome>
@@ -490,11 +484,7 @@
 		<altezza>203</altezza>
 		<ruolo>C</ruolo>
 	</giocatore>
-	
 	<!-- 6 MONTEGRANARO-->
-	
-			
-			
 	<giocatore>
 		<cognome>Cinciarini</cognome>
 		<nome>Alessandro</nome>
@@ -591,987 +581,974 @@
 		<altezza>200</altezza>
 		<ruolo>C</ruolo>
 	</giocatore>
-	
 	<!-- 7  PESARO-->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Traini</cognome>
+		<nome>Piero</nome>
+		<nascita>09-08-1978</nascita>
+		<peso>76</peso>
+		<altezza>182</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Musso</cognome>
+		<nome>Augusto</nome>
+		<nascita>17-02-1988</nascita>
+		<peso>72</peso>
+		<altezza>172</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Bartolucci</cognome>
+		<nome>Gualtiero</nome>
+		<nascita>20-09-1990</nascita>
+		<peso>80</peso>
+		<altezza>184</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Terenzi</cognome>
+		<nome>Andrea</nome>
+		<nascita>09-12-1989</nascita>
+		<peso>80</peso>
+		<altezza>188</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Johnson</cognome>
+		<nome>J.R.</nome>
+		<nascita>03-01-1992</nascita>
+		<peso>84</peso>
+		<altezza>190</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Panzieri</cognome>
+		<nome>Filippo</nome>
+		<nascita>17-12-1975</nascita>
+		<peso>88</peso>
+		<altezza>191</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Pecile</cognome>
+		<nome>Andrea</nome>
+		<nascita>15-03-1987</nascita>
+		<peso>86</peso>
+		<altezza>192</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Dordei</cognome>
+		<nome>Simon</nome>
+		<nascita>09-11-1994</nascita>
+		<peso>88</peso>
+		<altezza>196</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Trasolini</cognome>
+		<nome>Riccardo</nome>
+		<nascita>07-12-1978</nascita>
+		<peso>89</peso>
+		<altezza>197</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Anosike</cognome>
+		<nome>Philippe</nome>
+		<nascita>22-06-1991</nascita>
+		<peso>90</peso>
+		<altezza>198</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Turner</cognome>
+		<nome>Kwayne</nome>
+		<nascita>30-04-1983</nascita>
+		<peso>95</peso>
+		<altezza>201</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Petty</cognome>
+		<nome>Davis</nome>
+		<nascita>09-09-1990</nascita>
+		<peso>89</peso>
+		<altezza>196</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
-	
 	<!-- 8 SASSARI-->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Greenes</cognome>
+		<nome>Paul</nome>
+		<nascita>12-08-1987</nascita>
+		<peso>81</peso>
+		<altezza>183</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Caleb</cognome>
+		<nome>Set</nome>
+		<nascita>03-12-1988</nascita>
+		<peso>76</peso>
+		<altezza>185</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Devecchi</cognome>
+		<nome>Francesco</nome>
+		<nascita>01-06-1991</nascita>
+		<peso>78</peso>
+		<altezza>180</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Chessa</cognome>
+		<nome>Leonardo</nome>
+		<nascita>17-09-1992</nascita>
+		<peso>80</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gordon</cognome>
+		<nome>Ben</nome>
+		<nascita>16-02-1989</nascita>
+		<peso>76</peso>
+		<altezza>188</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Diener</cognome>
+		<nome>Anthony</nome>
+		<nascita>13-05-1992</nascita>
+		<peso>78</peso>
+		<altezza>189</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Sacchetti</cognome>
+		<nome>Nicola</nome>
+		<nascita>06-12-1990</nascita>
+		<peso>86</peso>
+		<altezza>187</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Dienere</cognome>
+		<nome>Travis</nome>
+		<nascita>15-08-1988</nascita>
+		<peso>87</peso>
+		<altezza>194</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Vanuzzo</cognome>
+		<nome>Daniele</nome>
+		<nascita>01-01-1986</nascita>
+		<peso>88</peso>
+		<altezza>196</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ezu</cognome>
+		<nome>Ben</nome>
+		<nascita>22-03-1992</nascita>
+		<peso>92</peso>
+		<altezza>201</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Tessitori</cognome>
+		<nome>Davide</nome>
+		<nascita>20-12-1987</nascita>
+		<peso>90</peso>
+		<altezza>200</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Thomas</cognome>
+		<nome>Reja</nome>
+		<nascita>19-09-1975</nascita>
+		<peso>87</peso>
+		<altezza>192</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
-	
 	<!-- 9 MANTOVA -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ranuzzi</cognome>
+		<nome>Daniele</nome>
+		<nascita>09-12-1989</nascita>
+		<peso>84</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Duncun</cognome>
+		<nome>Tim</nome>
+		<nascita>18-01-1978</nascita>
+		<peso>102</peso>
+		<altezza>205</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ginobili</cognome>
+		<nome>Manuel</nome>
+		<nascita>16-07-1979</nascita>
+		<peso>97</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Parker</cognome>
+		<nome>Tony</nome>
+		<nascita>06-04-1980</nascita>
+		<peso>79</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Belinelli</cognome>
+		<nome>Marco</nome>
+		<nascita>23-08-1984</nascita>
+		<peso>87</peso>
+		<altezza>192</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Splitter</cognome>
+		<nome>David</nome>
+		<nascita>18-11-1990</nascita>
+		<peso>90</peso>
+		<altezza>195</altezza>
+		<ruolo>	AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Leonard</cognome>
+		<nome>Kim</nome>
+		<nascita>05-01-1993</nascita>
+		<peso>93</peso>
+		<altezza>198</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Diaw</cognome>
+		<nome>Boris</nome>
+		<nascita>19-10-1979</nascita>
+		<peso>87</peso>
+		<altezza>189</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ellis</cognome>
+		<nome>Monta</nome>
+		<nascita>12-12-1982</nascita>
+		<peso>85</peso>
+		<altezza>184</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mils</cognome>
+		<nome>Travis</nome>
+		<nascita>16-01-1990</nascita>
+		<peso>89</peso>
+		<altezza>195</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Bayness</cognome>
+		<nome>Franck</nome>
+		<nascita>17-02-1978</nascita>
+		<peso>106</peso>
+		<altezza>205</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ayres</cognome>
+		<nome>Ben</nome>
+		<nascita>19-10-1990</nascita>
+		<peso>92</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
-	
 	<!-- 10 FORLI -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Aleotti</cognome>
+		<nome>Luca</nome>
+		<nascita>01-04-1992</nascita>
+		<peso>80</peso>
+		<altezza>185</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Arfilli</cognome>
+		<nome>Pietro</nome>
+		<nascita>19-08-1992</nascita>
+		<peso>60</peso>
+		<altezza>184</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Bassini</cognome>
+		<nome>Simone</nome>
+		<nascita>16-02-1992</nascita>
+		<peso>70</peso>
+		<altezza>186</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Caini</cognome>
+		<nome>Stefano</nome>
+		<nascita>01-11-1992</nascita>
+		<peso>65</peso>
+		<altezza>175</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Cardellini</cognome>
+		<nome>Margherito</nome>
+		<nascita>05-05-1992</nascita>
+		<peso>89</peso>
+		<altezza>198</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Busuoli</cognome>
+		<nome>Eleno</nome>
+		<nascita>16-09-1992</nascita>
+		<peso>98</peso>
+		<altezza>201</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>De Simone</cognome>
+		<nome>Giulio</nome>
+		<nascita>30-09-1992</nascita>
+		<peso>83</peso>
+		<altezza>187</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Dall'Erba</cognome>
+		<nome>Eleno</nome>
+		<nascita>02-02-1992</nascita>
+		<peso>88</peso>
+		<altezza>194</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Fiorentino</cognome>
+		<nome>Veronico</nome>
+		<nascita>23-02-1992</nascita>
+		<peso>99</peso>
+		<altezza>185</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Frabetti</cognome>
+		<nome>Stello</nome>
+		<nascita>19-03-1992</nascita>
+		<peso>78</peso>
+		<altezza>186</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Forlivesi</cognome>
+		<nome>Giulio</nome>
+		<nascita>15-08-1992</nascita>
+		<peso>80</peso>
+		<altezza>187</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gardenghi</cognome>
+		<nome>Francesco</nome>
+		<nascita>25-08-1992</nascita>
+		<peso>89</peso>
+		<altezza>202</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
-	
 	<!-- 11 CAPO D'ORALNDO -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Colliva</cognome>
+		<nome>Giorgio</nome>
+		<nascita>30-03-1992</nascita>
+		<peso>75</peso>
+		<altezza>182</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Ottavi</cognome>
+		<nome>Claudio</nome>
+		<nascita>05-08-1992</nascita>
+		<peso>65</peso>
+		<altezza>180</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gardini</cognome>
+		<nome>Gabriele</nome>
+		<nascita>05-04-1992</nascita>
+		<peso>80</peso>
+		<altezza>195</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gardino</cognome>
+		<nome>Aldo</nome>
+		<nascita>20-06-1992</nascita>
+		<peso>76</peso>
+		<altezza>187</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mandornong</cognome>
+		<nome>Llyod</nome>
+		<nascita>30-01-1992</nascita>
+		<peso>90</peso>
+		<altezza>184</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Romano</cognome>
+		<nome>Carlo</nome>
+		<nascita>17-08-1991</nascita>
+		<peso>80</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>De Anna</cognome>
+		<nome>Damiano</nome>
+		<nascita>22-08-1992</nascita>
+		<peso>87</peso>
+		<altezza>199</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Savic</cognome>
+		<nome>Ivan</nome>
+		<nascita>19-09-1994</nascita>
+		<peso>90</peso>
+		<altezza>196</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Diop</cognome>
+		<nome>Ibo</nome>
+		<nascita>30-04-1994</nascita>
+		<peso>97</peso>
+		<altezza>201</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Genovese</cognome>
+		<nome>Pietro</nome>
+		<nascita>16-07-1994</nascita>
+		<peso>75</peso>
+		<altezza>182</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gianaroli</cognome>
+		<nome>Davide</nome>
+		<nascita>15-12-1994</nascita>
+		<peso>76</peso>
+		<altezza>179</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Torri</cognome>
+		<nome>Davide</nome>
+		<nascita>08-09-1994</nascita>
+		<peso>78</peso>
+		<altezza>186</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
-	
 	<!-- 12 PISTOIA -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Marchesi</cognome>
+		<nome>Riccardo</nome>
+		<nascita>18-06-1992</nascita>
+		<peso>78</peso>
+		<altezza>195</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Guizzardi</cognome>
+		<nome>Alberto</nome>
+		<nascita>21-02-1992</nascita>
+		<peso>90</peso>
+		<altezza>188</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mazziotti</cognome>
+		<nome>Francesco</nome>
+		<nascita>12-10-1992</nascita>
+		<peso>89</peso>
+		<altezza>200</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Dinoi</cognome>
+		<nome>Mattia</nome>
+		<nascita>23-10-1992</nascita>
+		<peso>76</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Semprini</cognome>
+		<nome>Federico</nome>
+		<nascita>28-12-1992</nascita>
+		<peso>76</peso>
+		<altezza>186</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Merighi</cognome>
+		<nome>Stefano</nome>
+		<nascita>20-11-1992</nascita>
+		<peso>102</peso>
+		<altezza>190</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Baldassarri</cognome>
+		<nome>Francesco</nome>
+		<nascita>16-03-1992</nascita>
+		<peso>78</peso>
+		<altezza>189</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Sangiorgi</cognome>
+		<nome>Andrea</nome>
+		<nascita>20-09-1992</nascita>
+		<peso>80</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Pastore</cognome>
+		<nome>Lucio</nome>
+		<nascita>17-08-1991</nascita>
+		<peso>89</peso>
+		<altezza>196</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gregori</cognome>
+		<nome>Beatricio</nome>
+		<nascita>19-12-1991</nascita>
+		<peso>93</peso>
+		<altezza>200</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Maccio</cognome>
+		<nome>Marco</nome>
+		<nascita>16-03-1986</nascita>
+		<peso>78</peso>
+		<altezza>179</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Zanni</cognome>
+		<nome>Luca</nome>
+		<nascita>11-10-1989</nascita>
+		<peso>86</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
-	
-	
 	<!-- 13 TORTONA  -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Vignoli</cognome>
+		<nome>Simone</nome>
+		<nascita>07-09-1987</nascita>
+		<peso>78</peso>
+		<altezza>178</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Lazzari</cognome>
+		<nome>Giovanni</nome>
+		<nascita>20-12-1988</nascita>
+		<peso>80</peso>
+		<altezza>181</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mezzetti</cognome>
+		<nome>Francesco</nome>
+		<nascita>09-10-1988</nascita>
+		<peso>87</peso>
+		<altezza>187</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mazzetti</cognome>
+		<nome>Francesco</nome>
+		<nascita>16-02-1985</nascita>
+		<peso>87</peso>
+		<altezza>185</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Zauli</cognome>
+		<nome>Andrea</nome>
+		<nascita>17-06-1991</nascita>
+		<peso>86</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Fantoni</cognome>
+		<nome>Mario</nome>
+		<nascita>20-03-1992</nascita>
+		<peso>87</peso>
+		<altezza>189</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Baldi</cognome>
+		<nome>Giulio</nome>
+		<nascita>04-04-1992</nascita>
+		<peso>78</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Delli</cognome>
+		<nome>Flavio</nome>
+		<nascita>18-03-1992</nascita>
+		<peso>100</peso>
+		<altezza>198</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Selmi</cognome>
+		<nome>Matteo</nome>
+		<nascita>01-01-1992</nascita>
+		<peso>87</peso>
+		<altezza>202</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Anastasia</cognome>
+		<nome>Andrea</nome>
+		<nascita>07-09-1994</nascita>
+		<peso>78</peso>
+		<altezza>198</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Prati</cognome>
+		<nome>Lorenzo</nome>
+		<nascita>06-04-1994</nascita>
+		<peso>89</peso>
+		<altezza>206</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Mangano</cognome>
+		<nome>Michele</nome>
+		<nascita>15-11-1987</nascita>
+		<peso>89</peso>
+		<altezza>199</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
-	
-	<!-- 14 LEGNANO  -->
+	<!-- 14 LEGNANO -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
-	</giocatore>
-	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Natali</cognome>
+		<nome>Benedetto</nome>
+		<nascita>09-09-1997</nascita>
+		<peso>76</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Poggioli</cognome>
+		<nome>Carolino</nome>
+		<nascita>09-10-1997</nascita>
+		<peso>79</peso>
+		<altezza>182</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Placidi</cognome>
+		<nome>Saro</nome>
+		<nascita>18-07-1997</nascita>
+		<peso>80</peso>
+		<altezza>185</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Fioretti</cognome>
+		<nome>Nicolo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>87</peso>
+		<altezza>189</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Zerbini</cognome>
+		<nome>Massimo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>198</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Loddo</cognome>
+		<nome>Paolo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>198</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Tedeschi</cognome>
+		<nome>Fabio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>201</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Colombo</cognome>
+		<nome>Vittorio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>100</peso>
+		<altezza>202</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Dondi</cognome>
+		<nome>Matildo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>186</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Tosatti</cognome>
+		<nome>Davide</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Matulli</cognome>
+		<nome>Filippo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>189</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
-
-
+	<giocatore>
+		<cognome>Damiani</cognome>
+		<nome>Giulio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>200</altezza>
+		<ruolo>AG</ruolo>
+	</giocatore>
 	<!-- 15 CENTO -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Vallara</cognome>
+		<nome>Gregorio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>87</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Morra</cognome>
+		<nome>Jacopo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>78</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Barbieri</cognome>
+		<nome>Giovanni</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>80</peso>
+		<altezza>186</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Costi</cognome>
+		<nome>Francesco</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>76</peso>
+		<altezza>186</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Diani</cognome>
+		<nome>Chiaro</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>80</peso>
+		<altezza>189</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Tarpinelli</cognome>
+		<nome>Rachelo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>192</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Pelliccia</cognome>
+		<nome>Antonio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>78</peso>
+		<altezza>199</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Stasi</cognome>
+		<nome>Samuele</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>198</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Gentilini</cognome>
+		<nome>Andrea</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>98</peso>
+		<altezza>200</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Neri</cognome>
+		<nome>Matteo</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>201</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Corelli</cognome>
+		<nome>Saro</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>76</peso>
+		<altezza>208</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Rossiello</cognome>
+		<nome>Daniele</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>87</peso>
+		<altezza>190</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
-	
 	<!-- 16 BRESCIA  -->
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Balotelli</cognome>
+		<nome>Mario</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>190</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Verratti</cognome>
+		<nome>Marco</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>80</peso>
+		<altezza>180</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Pirlo</cognome>
+		<nome>Andrea</nome>
+		<nascita>19-01-1997</nascita>
+		<peso>90</peso>
+		<altezza>187</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>De Rossi</cognome>
+		<nome>Daniele</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>189</altezza>
+		<ruolo>G</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Marchisio</cognome>
+		<nome>Claudio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>78</peso>
+		<altezza>190</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Sirigu</cognome>
+		<nome>Salvatore</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>78</peso>
+		<altezza>198</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Chiellini</cognome>
+		<nome>Giorgio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>79</peso>
+		<altezza>200</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Barzagli</cognome>
+		<nome>Andrea</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>180</altezza>
+		<ruolo>AG</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Cerci</cognome>
+		<nome>Alessio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>199</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Immobile</cognome>
+		<nome>Ciro</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>189</altezza>
+		<ruolo>C</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Candreva</cognome>
+		<nome>Antonio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>178</altezza>
+		<ruolo>PM</ruolo>
 	</giocatore>
 	<giocatore>
-		<cognome>	</cognome>
-		<nome>	</nome>
-		<nascita>	</nascita>
-		<peso>	</peso>
-		<altezza>	</altezza>
-		<ruolo>	</ruolo>
+		<cognome>Abate</cognome>
+		<nome>Ignazio</nome>
+		<nascita>17-01-1997</nascita>
+		<peso>89</peso>
+		<altezza>180</altezza>
+		<ruolo>AP</ruolo>
 	</giocatore>
-
 </Giocatori>
