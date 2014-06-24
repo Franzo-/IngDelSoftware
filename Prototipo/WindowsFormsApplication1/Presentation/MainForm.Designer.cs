@@ -97,6 +97,7 @@
             this._campionatoComboBox.Name = "_campionatoComboBox";
             this._campionatoComboBox.Size = new System.Drawing.Size(236, 21);
             this._campionatoComboBox.TabIndex = 1;
+            this._campionatoComboBox.SelectedIndexChanged += new System.EventHandler(this.CampionatoChanged);
             // 
             // _campionatoLabel
             // 
@@ -128,6 +129,7 @@
             this._squadraComboBox.Name = "_squadraComboBox";
             this._squadraComboBox.Size = new System.Drawing.Size(236, 21);
             this._squadraComboBox.TabIndex = 3;
+            this._squadraComboBox.SelectedIndexChanged += new System.EventHandler(this.CriteriChanged);
             // 
             // _partitaLabel
             // 
@@ -148,6 +150,7 @@
             this._partitaComboBox.Name = "_partitaComboBox";
             this._partitaComboBox.Size = new System.Drawing.Size(237, 21);
             this._partitaComboBox.TabIndex = 5;
+            this._partitaComboBox.SelectedIndexChanged += new System.EventHandler(this.CriteriChanged);
             // 
             // _dataGridView
             // 
@@ -186,12 +189,14 @@
             this._classificaGiocatoriToolStripMenuItem.Name = "_classificaGiocatoriToolStripMenuItem";
             this._classificaGiocatoriToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this._classificaGiocatoriToolStripMenuItem.Text = "Classifica Giocatori";
+            this._classificaGiocatoriToolStripMenuItem.Click += new System.EventHandler(this._classificaGiocatoriToolStripMenuItem_Click);
             // 
             // _classificaSquadreToolStripMenuItem
             // 
             this._classificaSquadreToolStripMenuItem.Name = "_classificaSquadreToolStripMenuItem";
             this._classificaSquadreToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this._classificaSquadreToolStripMenuItem.Text = "Classifica Squadre";
+            this._classificaSquadreToolStripMenuItem.Click += new System.EventHandler(this._classificaSquadreToolStripMenuItem_Click);
             // 
             // MainForm
             // 

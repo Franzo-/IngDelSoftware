@@ -67,6 +67,9 @@ namespace BasketSystem.Model
             {
                 statistica.Accept(Visitor, nomeMetodo);
             }
+
+            // La view deve essere avvisata del calcolo effettuato per includere il nuovo campo
+            OnChanged();
         }
 
         public void Invalidate()

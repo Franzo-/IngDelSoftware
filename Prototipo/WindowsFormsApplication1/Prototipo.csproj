@@ -63,6 +63,7 @@
     <Compile Include="Model\Squadra.cs" />
     <Compile Include="Model\Statistiche.cs" />
     <Compile Include="Persistence\Loader.cs" />
+    <Compile Include="Presentation\ClassificaPresenter.cs" />
     <Compile Include="Presentation\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

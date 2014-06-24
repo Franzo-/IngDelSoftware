@@ -14,9 +14,9 @@ namespace BasketSystem.Model
         private String _campo;
 
         //La statistica corrente deve essere del tipo specificato in _tipo
-        private String _tipo;
+        private Type _tipo;
 
-        public CustomAttribute(String campo, String tipo)
+        public CustomAttribute(String campo, Type tipo)
         {
             if (campo == null)
                 throw new ArgumentException("campo == null");
@@ -33,7 +33,7 @@ namespace BasketSystem.Model
             set { _campo = value; }
         }
 
-        public String Tipo
+        public Type Tipo
         {
             get { return _tipo; }
             set { _tipo = value; }
