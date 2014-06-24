@@ -30,13 +30,13 @@
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._campionatoLabel = new System.Windows.Forms.Label();
             this._campionatoComboBox = new System.Windows.Forms.ComboBox();
+            this._campionatoLabel = new System.Windows.Forms.Label();
             this._squadraLabel = new System.Windows.Forms.Label();
             this._squadraComboBox = new System.Windows.Forms.ComboBox();
             this._partitaLabel = new System.Windows.Forms.Label();
             this._partitaComboBox = new System.Windows.Forms.ComboBox();
+            this._dataGridView = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this._tipoClassificaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this._classificaGiocatoriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +46,7 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
+            this.splitContainer1.Panel2.Controls.Add(this._dataGridView);
             this.splitContainer1.Size = new System.Drawing.Size(727, 415);
             this.splitContainer1.SplitterDistance = 86;
             this.splitContainer1.TabIndex = 3;
@@ -89,17 +89,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(727, 86);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // _campionatoComboBox
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(727, 325);
-            this.dataGridView1.TabIndex = 0;
+            this._campionatoComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._campionatoComboBox.FormattingEnabled = true;
+            this._campionatoComboBox.Location = new System.Drawing.Point(3, 46);
+            this._campionatoComboBox.Name = "_campionatoComboBox";
+            this._campionatoComboBox.Size = new System.Drawing.Size(236, 21);
+            this._campionatoComboBox.TabIndex = 1;
             // 
             // _campionatoLabel
             // 
@@ -111,15 +108,6 @@
             this._campionatoLabel.TabIndex = 0;
             this._campionatoLabel.Text = "Seleziona Campionato";
             this._campionatoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // _campionatoComboBox
-            // 
-            this._campionatoComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._campionatoComboBox.FormattingEnabled = true;
-            this._campionatoComboBox.Location = new System.Drawing.Point(3, 46);
-            this._campionatoComboBox.Name = "_campionatoComboBox";
-            this._campionatoComboBox.Size = new System.Drawing.Size(236, 21);
-            this._campionatoComboBox.TabIndex = 1;
             // 
             // _squadraLabel
             // 
@@ -160,6 +148,19 @@
             this._partitaComboBox.Name = "_partitaComboBox";
             this._partitaComboBox.Size = new System.Drawing.Size(237, 21);
             this._partitaComboBox.TabIndex = 5;
+            // 
+            // _dataGridView
+            // 
+            this._dataGridView.AllowUserToAddRows = false;
+            this._dataGridView.AllowUserToDeleteRows = false;
+            this._dataGridView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this._dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this._dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this._dataGridView.Location = new System.Drawing.Point(0, 0);
+            this._dataGridView.Name = "_dataGridView";
+            this._dataGridView.ReadOnly = true;
+            this._dataGridView.Size = new System.Drawing.Size(727, 325);
+            this._dataGridView.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -208,7 +209,7 @@
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._dataGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -219,7 +220,7 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView _dataGridView;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label _campionatoLabel;
         private System.Windows.Forms.ComboBox _campionatoComboBox;
