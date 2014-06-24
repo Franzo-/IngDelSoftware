@@ -71,19 +71,23 @@ namespace BasketSystem.Presentation
                 _squadraComboBox.DataSource = squadraSource.Concat(campCorrente.Squadre);
                 _squadraComboBox.SelectedIndex = 0;
                 _squadraComboBox.Visible = true;
+                _squadraLabel.Visible = true;
                 
                 _partitaComboBox.DataSource = partitaSource.Concat(campCorrente.Partite);
                 _partitaComboBox.SelectedIndex = 0;
                 _partitaComboBox.Visible = true;
+                _partitaLabel.Visible = true;
             }
             else
             {
                 //Si cancellano i dati precedenti sostituendo con un null
 
+                _squadraLabel.Visible = false;
                 _squadraComboBox.Visible = false;
                 _squadraComboBox.DataSource = squadraSource;
                 _squadraComboBox.SelectedIndex = 0;
 
+                _partitaLabel.Visible = false;
                 _partitaComboBox.Visible = false;
                 _partitaComboBox.DataSource = partitaSource;
                 _partitaComboBox.SelectedIndex = 0;
