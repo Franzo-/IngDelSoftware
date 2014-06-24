@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using BasketSystem.Model;
+
 namespace BasketSystem.Presentation
 {
     public partial class MainForm : Form
@@ -19,9 +21,20 @@ namespace BasketSystem.Presentation
 
         protected override void OnLoad(EventArgs e)
         {
+            _campionatoComboBox.DataSource = Database.Campionati;
+            _campionatoComboBox.SelectedIndex = 0;      //Selezione di default
+
+
+
             SetupLayout();
             SetupDataGridView();
             PopulateDataGridView();
+        }
+
+        private void AggiornaSquadrePartite()
+        {
+            Campionato campCorrente = (Campionato) _campionatoComboBox.SelectedItem;
+            _squadraComboBox.DataSource = campCorrente.Squadre;
         }
 
         private void SetupLayout()
@@ -108,6 +121,13 @@ namespace BasketSystem.Presentation
             _dataGridView.Columns[2].DisplayIndex = 0;
             _dataGridView.Columns[3].DisplayIndex = 1;
             _dataGridView.Columns[4].DisplayIndex = 2;
+        }
+
+        //Utility
+
+        private Database Database
+        {
+            get { return Database.GetInstance(); }
         }
     }
 }

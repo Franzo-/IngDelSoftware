@@ -10,6 +10,40 @@
 			<squadra>Olimpia Milano</squadra>
 			<squadra>Mens Sana Siena</squadra>
 		</Squadre>
+		<Partite>
+			<partita>
+					<casa>Fortitudo Bologna</casa>
+					<ospite>Virtus Bologna</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Olimpia Milano</casa>
+					<ospite>Mens Sana Siena</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Fortitudo Bologna</casa>
+					<ospite>Olimpia Milano</ospite>
+					<data>19/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Virtus Bologna</casa>
+					<ospite>Mens Sana Siena</ospite>
+					<data>18/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>
 	</Campionato>
 	
 	<Campionato>
@@ -21,6 +55,41 @@
 			<squadra>VuElle Pesaro</squadra>
 			<squadra>Dinamo Sassari</squadra>
 		</Squadre>
+		<Partite>
+			<partita>
+					<casa>Sutor Montegranaro</casa>
+					<ospite>Virtus Roma</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>VuElle Pesaro</casa>
+					<ospite>Dinamo Sassari</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Sutor Montegranaro</casa>
+					<ospite>VuElle Pesaro</ospite>
+					<data>19/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Virtus Roma</casa>
+					<ospite>Dinamo Sassari</ospite>
+					<data>18/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>		
+
 	</Campionato>
 	
 	<Campionato>
@@ -32,6 +101,43 @@
 			<squadra>Capo d'Orlando</squadra>
 			<squadra>Pistoia</squadra>
 		</Squadre>
+		
+	<Partite>
+			<partita>
+					<casa>Mantova</casa>
+					<ospite>Forli</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Capo d'Orlando</casa>
+					<ospite>Pistoia</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Capo d'Orlando</casa>
+					<ospite>Forli</ospite>
+					<data>19/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Mantova</casa>
+					<ospite>Pistoia</ospite>
+					<data>18/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>
+		
+		
 	</Campionato>
 	
 		<Campionato>
@@ -43,6 +149,43 @@
 			<squadra>Cento</squadra>
 			<squadra>Brescia</squadra>
 		</Squadre>
+		
+				
+	<Partite>
+			<partita>
+					<casa>Tortona</casa>
+					<ospite>Legnano</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Cento</casa>
+					<ospite>Brescia</ospite>
+					<data>12/10/2014</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Brescia</casa>
+					<ospite>Legnano</ospite>
+					<data>19/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Cento</casa>
+					<ospite>Tortona</ospite>
+					<data>18/10/2014</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>
+		
 	</Campionato>
 	
 <Campionato>
@@ -54,6 +197,40 @@
 			<squadra>Olimpia Milano</squadra>
 			<squadra>Virtus Roma</squadra>
 		</Squadre>
+		<Partite>
+			<partita>
+					<casa>Fortitudo Bologna</casa>
+					<ospite>Virtus Bologna</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Olimpia Milano</casa>
+					<ospite>Virtus Roma</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Fortitudo Bologna</casa>
+					<ospite>Olimpia Milano</ospite>
+					<data>19/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Virtus Bologna</casa>
+					<ospite>Virtus Roma</ospite>
+					<data>18/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>
 	</Campionato>
 	
 	<Campionato>
@@ -65,6 +242,41 @@
 			<squadra>VuElle Pesaro</squadra>
 			<squadra>Mantova</squadra>
 		</Squadre>
+		
+		<Partite>
+			<partita>
+					<casa>Sutor Montegranaro</casa>
+					<ospite>Mens Sana Siena</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>VuElle Pesaro</casa>
+					<ospite>Mantova</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Sutor Montegranaro</casa>
+					<ospite>VuElle Pesaro</ospite>
+					<data>19/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Mens Sana Siena</casa>
+					<ospite>Mantova</ospite>
+					<data>18/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>	
 	</Campionato>
 	
 	<Campionato>
@@ -76,6 +288,40 @@
 			<squadra>Capo d'Orlando</squadra>
 			<squadra>Brescia</squadra>
 		</Squadre>
+		<Partite>
+			<partita>
+					<casa>Dinamo Sassari</casa>
+					<ospite>Forli</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Capo d'Orlando</casa>
+					<ospite>Brescia</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Capo d'Orlando</casa>
+					<ospite>Forli</ospite>
+					<data>19/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Dinamo Sassari</casa>
+					<ospite>Brescia</ospite>
+					<data>18/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>
+     </Partite>
 	</Campionato>
 	
 		<Campionato>
@@ -87,6 +333,41 @@
 			<squadra>Cento</squadra>
 			<squadra>Pistoia</squadra>
 		</Squadre>
+		
+		<Partite>
+			<partita>
+					<casa>Tortona</casa>
+					<ospite>Legnano</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>100</puntiCasa>
+					<puntiOspite>88</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Cento</casa>
+					<ospite>Pistoia</ospite>
+					<data>12/10/2013</data>
+					<giornata>1</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>87</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Pistoia</casa>
+					<ospite>Legnano</ospite>
+					<data>19/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>98</puntiCasa>
+					<puntiOspite>86</puntiOspite>
+			</partita>
+			<partita>
+					<casa>Cento</casa>
+					<ospite>Tortona</ospite>
+					<data>18/10/2013</data>
+					<giornata>2</giornata>
+					<puntiCasa>90</puntiCasa>
+					<puntiOspite>65</puntiOspite>
+			</partita>			
+		</Partite>
 	</Campionato>
 </Campionati>	
 	

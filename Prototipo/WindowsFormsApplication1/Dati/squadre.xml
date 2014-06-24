@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Squadre>
+	<Squadra> 
+		<nome>Fortitudo Bologna</nome>
+		<citta>Bologna</citta>
+		<impianto>Paladozza</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Virtus Bologna</nome>
+		<citta>Bologna</citta>
+		<impianto>Futurshow</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Olimpia Milano</nome>
+		<citta>Milano</citta>
+		<impianto>Forum Assago</impianto>	
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Mens Sana Siena</nome>
+		<citta>Siena</citta>
+		<impianto>Pala MensSana</impianto>
+	</Squadra>
+	<!-- A2-->
+	<Squadra> 
+		<nome>Virtus Roma</nome>
+		<citta>Roma</citta>
+		<impianto>PalaLottomatica</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Sutor Montegranaro</nome>
+		<citta>Montegranaro</citta>
+		<impianto>Pala Sutor</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>VuElle Pesaro</nome>
+		<citta>Pesaro</citta>
+		<impianto>Pala Miramare</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Dinamo Sassari</nome>
+		<citta>Sassari</citta>
+		<impianto>PalaDinamo</impianto>
+	</Squadra>
+	
+	<!--gold-->
+	<Squadra> 
+		<nome>Mantova</nome>
+		<citta>Mantova</citta>
+		<impianto>PalaCarife</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Forli</nome>
+		<citta>Cesena</citta>
+		<impianto>PalaCesena</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Capo d'Orlando</nome>
+		<citta>Capo d'Orlando</citta>
+		<impianto>Pala Miramare</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Pistoia</nome>
+		<citta>Pistoia</citta>
+		<impianto>Pala Dinamo</impianto>
+	</Squadra>
+	
+	<!--Silver-->
+		<Squadra> 
+		<nome>Tortona</nome>
+		<citta>Padova</citta>
+		<impianto>S.Antonio Palace</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Legnano</nome>
+		<citta>Alessandria</citta>
+		<impianto>MasterForum</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Cento</nome>
+		<citta>Cento</citta>
+		<impianto>Martin Luter King</impianto>
+	</Squadra>
+	
+	<Squadra> 
+		<nome>Brescia</nome>
+		<citta>Brescia</citta>
+		<impianto>Pala Leonessa</impianto>
+	</Squadra>
+	
+	
+</Squadre>
+	
+	
+	
+	
+	
+	
