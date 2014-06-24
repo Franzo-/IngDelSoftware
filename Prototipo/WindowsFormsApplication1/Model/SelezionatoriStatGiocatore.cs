@@ -89,10 +89,10 @@ namespace BasketSystem.Model
 
         public override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
         {
-            // LINQ
+            // LINQ con clone delle statistiche
             return from stat in _campionato.Statistiche
                    where stat.GetType() == typeof(StatisticaGiocatore)
-                   select (StatisticaGiocatore)stat;
+                   select (StatisticaGiocatore) stat.Clone();
         }
 
     }
