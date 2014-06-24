@@ -9,9 +9,9 @@ namespace BasketSystem.Model
     //Enumerativo che descrive un campionato.
      enum Serie
     {
-        Serie_A = 0,
-        Serie_A2 = 1,
-        Lega_Gold = 2,
-        Lega_Silver = 3
+        SerieA = 0,
+        SerieA2 = 1,
+        LegaGold = 2,
+        LegaSilver = 3
     }
 }

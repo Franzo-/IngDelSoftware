@@ -68,7 +68,19 @@ namespace BasketSystem.Model
 
         public override String ToString()
         {
-            return Nome;
+            String result = "Nome: "+Nome+"\nCittà: "+Città+"\nRoosters: \n";
+
+            foreach (KeyValuePair<int, HashSet<Giocatore>> pair in _rooster)
+            {
+                result += "Anno: " + pair.Key + "\nGiocatori: ";
+                foreach (Giocatore giocatore in pair.Value)
+                {
+
+                    result += giocatore.Nome + " ";
+                }
+            }
+
+            return result;
         }
     }
 }
