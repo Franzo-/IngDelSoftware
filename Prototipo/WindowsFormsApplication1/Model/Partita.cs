@@ -70,5 +70,10 @@ namespace BasketSystem.Model
         {
             get { return _ospite; }
         }
+
+        public override string ToString()
+        {
+            return Casa.ToString() + " vs " + Ospite.ToString();
+        }
     }
 }

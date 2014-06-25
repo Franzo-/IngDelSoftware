@@ -47,6 +47,8 @@ namespace BasketSystem.Presentation
             IEnumerable<Statistica> statistiche = Classifica.GetInstance().GetStatistiche();
 
             // costruire le colonne della grid view,
+            //Voglio visualizzare anche il nome della Statistica, qui non lo fa!!!
+
             string[] campi = statistiche.ElementAt(0).GetNomiCampi();
             Control.ColumnCount = campi.Length;
 

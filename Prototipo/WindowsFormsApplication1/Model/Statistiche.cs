@@ -66,6 +66,11 @@ namespace BasketSystem.Model
             return ((IComparable)Campo).CompareTo((IComparable)cs.Campo);
         }
 
+        public override string ToString()
+        {
+            return "" + Campo;
+        }
+
     }
 
     abstract class Statistica : ICloneable
@@ -170,6 +175,11 @@ namespace BasketSystem.Model
             get { return _squadra; }
         }
 
+        public override string ToString()
+        {
+            return Squadra.Nome;
+        }
+
     }
 
     class StatisticaGiocatore : Statistica
@@ -232,15 +242,7 @@ namespace BasketSystem.Model
 
         public override String ToString()
         {
-            String result = "";
-
-            result += Partita.ToString() + " " + Giocatore.ToString() + "\n ";
-
-            foreach (KeyValuePair<string, CampoStatistica> campo in Campi)
-            {
-                result += campo.Key + " " + campo.Value.Campo + "\n ";
-            }
-            return result;
+            return Giocatore + " " + Partita;
         }
 
     }

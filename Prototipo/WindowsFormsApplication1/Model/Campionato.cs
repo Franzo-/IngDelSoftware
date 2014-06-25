@@ -74,33 +74,9 @@ namespace BasketSystem.Model
 
         public override String ToString()
         {
-            String result = "";
-            result += "Anno: " + Anno + " Serie: " + Serie + "\nPartite";
-            foreach (Partita partita in Partite)
-            {
-
-                result += partita.Casa + " - " +partita.Ospite+"\n";
-            }
-
-            result += "Squadre: ";
-            foreach (Squadra squadra in Squadre)
-            {
-
-                result += squadra.Nome +" ";
-            }
-
-            int i = 0;
-            int j = 0;
-            foreach(Statistica s in Statistiche)
-            {
-                if (s is StatisticaSquadra) i++; 
-                if(s is StatisticaGiocatore) j++;
-            }
-            Console.WriteLine("StatisticheSquadra: "+i);
-            Console.WriteLine("StatisticaGiocatore: " + j);
-
             
-            return result;
+           return Serie + " " + Anno;
+            
         }
         
 
