@@ -22,7 +22,12 @@ namespace BasketSystem.Model
 
             internal static CampoStatistica Media(CampoStatistica campoPrimo, CampoStatistica campoSecondo)
             {
-                return campoPrimo / campoSecondo;
+                CampoStatistica result = campoPrimo / campoSecondo;
+
+                if (Double.IsNaN((double)result.Campo) || Double.IsInfinity((double)result.Campo))
+                    result = new CampoStatistica(0);
+
+                return result;
             }
 
             internal static CampoStatistica Percentuale(CampoStatistica campoParziale, CampoStatistica campoTotale)

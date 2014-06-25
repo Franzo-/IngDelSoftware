@@ -44,7 +44,7 @@ namespace BasketSystem.Model
         //Ridefinisce l'operatore / per oggetti CampoStatistica
         public static CampoStatistica operator /(CampoStatistica a, CampoStatistica b)
         {
-            return new CampoStatistica(((dynamic)a.Campo * 1.0)/ (dynamic)b.Campo);
+            return new CampoStatistica(((dynamic)a.Campo * 1.0) / (dynamic)b.Campo);
         }
 
         #endregion
@@ -69,8 +69,13 @@ namespace BasketSystem.Model
 
         public override string ToString()
         {
-            //return ((IFormattable) _campo).ToString("F2", CultureInfo.CurrentCulture.NumberFormat);
-            return "" + Campo;
+            //Una porcheria
+            String result = String.Format("{0:F2}", _campo);
+
+            if (!result.EndsWith("00"))
+                return result;
+
+            return String.Format("{0}", _campo);
         }
 
     }
