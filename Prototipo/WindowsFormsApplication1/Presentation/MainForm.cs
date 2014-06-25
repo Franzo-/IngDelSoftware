@@ -60,10 +60,8 @@ namespace BasketSystem.Presentation
 
             if (_tipoStatistica == typeof(StatisticaGiocatore))
             {
-                //Il primo elemento delle combobox deve essere un valore null perchè l'utente può non specificare il filtro corrispondente
-                Object obj = new object();
-
-                _squadraComboBox.Items.Add(obj);
+                //Il primo elemento delle combobox deve essere una stringa che indica "nessun filtro"
+                _squadraComboBox.Items.Add("Nessun filtro");
 
                 foreach (Squadra s in campCorrente.Squadre)
                 {
@@ -72,10 +70,12 @@ namespace BasketSystem.Presentation
                 }
 
                 _squadraComboBox.Visible = true;
+                _squadraComboBox.SelectedIndex = 0;
                 _squadraLabel.Visible = true;
+                
 
-
-                _partitaComboBox.Items.Add(new object());
+                //Il primo elemento delle combobox deve essere una stringa che indica "nessun filtro"
+                _partitaComboBox.Items.Add("Nessun filtro");
 
                 foreach (Partita p in campCorrente.Partite)
                 {
@@ -84,12 +84,11 @@ namespace BasketSystem.Presentation
                 }
 
                 _partitaComboBox.Visible = true;
+                _partitaComboBox.SelectedIndex = 0;
                 _partitaLabel.Visible = true;
             }
             else
             {
-                //Si cancellano i dati precedenti sostituendo con un null
-
                 _squadraLabel.Visible = false;
                 _squadraComboBox.Visible = false;
                 
@@ -114,7 +113,7 @@ namespace BasketSystem.Presentation
                 _tipoStatistica, 
                 (Campionato) _campionatoComboBox.SelectedItem, 
                 _squadraComboBox.SelectedItem as Squadra,
-                (Partita) _partitaComboBox.SelectedItem
+                _partitaComboBox.SelectedItem as Partita
                 );
         }
 

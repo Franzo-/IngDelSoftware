@@ -281,9 +281,10 @@ namespace BasketSystem.Persistence
             }
         }
 
+        private static Random _random = new Random(); 
+
         private void GeneraStatisticheRandom( Partita partita, Giocatore giocatore, Campionato campionato)
         {
-            Random _random = new Random(); 
 
             int punti = _random.Next(0, partita.PuntiCasa);
             int tent2Tot = _random.Next(20);

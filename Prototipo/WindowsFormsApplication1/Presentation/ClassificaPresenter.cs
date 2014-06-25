@@ -47,14 +47,16 @@ namespace BasketSystem.Presentation
             IEnumerable<Statistica> statistiche = Classifica.GetInstance().GetStatistiche();
 
             // costruire le colonne della grid view,
-            //Voglio visualizzare anche il nome della Statistica, qui non lo fa!!!
-
             string[] campi = statistiche.ElementAt(0).GetNomiCampi();
-            Control.ColumnCount = campi.Length;
+            Control.ColumnCount = campi.Length + 1;
 
-            for (int i = 0; i < Control.ColumnCount; i++)
+            //Colonna con il nome della statistica
+            Control.Columns[0].Name = "Nome";
+
+            //Colonne dei campi
+            for (int i = 0; i < campi.Length; i++)
             {
-                DataGridViewColumn currentCol = Control.Columns[i];
+                DataGridViewColumn currentCol = Control.Columns[i + 1];
 
                 currentCol.Name = campi[i];
                 
@@ -70,9 +72,15 @@ namespace BasketSystem.Presentation
             {
                 DataGridViewRow row = new DataGridViewRow();
 
+                //Cella del nome della statistica
+                DataGridViewTextBoxCell cell = new DataGridViewTextBoxCell();
+                cell.Value = statistica.ToString();
+                row.Cells.Add(cell);
+
+                //Celle dei campi
                 foreach (string campo in campi)
                 {
-                    DataGridViewTextBoxCell cell = new DataGridViewTextBoxCell();
+                    cell = new DataGridViewTextBoxCell();
                     cell.Value = statistica.GetCampo(campo);
                     row.Cells.Add(cell);
                 }

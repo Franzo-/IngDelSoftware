@@ -43,7 +43,7 @@ namespace BasketSystem.Model
         //Ridefinisce l'operatore / per oggetti CampoStatistica
         public static CampoStatistica operator /(CampoStatistica a, CampoStatistica b)
         {
-            return new CampoStatistica((dynamic)a.Campo / (dynamic)b.Campo);
+            return new CampoStatistica(((dynamic)a.Campo * 1.0)/ (dynamic)b.Campo);
         }
 
         #endregion
@@ -217,10 +217,10 @@ namespace BasketSystem.Model
             _giocatore = giocatore;
 
             SetCampo("Punti", new CampoStatistica(punti));
-            SetCampo("Tentativi da 2 Segnati", new CampoStatistica(tent2segn));
-            SetCampo("Tentativi da 2 Totali", new CampoStatistica(tent2tot));
-            SetCampo("Tentativi da 3 Segnati", new CampoStatistica(tent3segn));
-            SetCampo("Tentativi da 3 Totali", new CampoStatistica(tent3tot));
+            SetCampo("Tentativi Da 2 Segnati", new CampoStatistica(tent2segn));
+            SetCampo("Tentativi Da 2 Totali", new CampoStatistica(tent2tot));
+            SetCampo("Tentativi Da 3 Segnati", new CampoStatistica(tent3segn));
+            SetCampo("Tentativi Da 3 Totali", new CampoStatistica(tent3tot));
             SetCampo("Tiri Liberi Segnati", new CampoStatistica(tlSegn));
             SetCampo("Tiri Liberi Totali", new CampoStatistica(tlTot));
             SetCampo("Palle Recuperate", new CampoStatistica(palleRec));
@@ -242,7 +242,8 @@ namespace BasketSystem.Model
 
         public override String ToString()
         {
-            return Giocatore + " " + Partita;
+            //return Giocatore + " " + Partita;
+            return Giocatore.ToString();
         }
 
     }

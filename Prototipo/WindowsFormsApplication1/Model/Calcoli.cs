@@ -126,17 +126,15 @@ namespace BasketSystem.Model
 
         public void Visit(Statistica statistica, string metodo)
         {
-            foreach (Type type in Assembly.GetExecutingAssembly().GetTypes())
-            {
-                //Cerchiamo i metodi del tipo della classe chiamante ( potrebbe essere anche una classe derivata )
-                if (type.Name == this.GetType().Name)
-                {
-                    //Esecuzione standard del metodo passato come parametro
-                    MethodInfo methodInfo = type.GetMethod(metodo, new Type[] {typeof(Statistica)} );
-                    methodInfo.Invoke(this, new Object[] { statistica });
-                    
-                }
-            }
+            //Cerchiamo i metodi del tipo della classe chiamante ( potrebbe essere anche una classe derivata )
+            Type type = this.GetType();
+
+
+            //Esecuzione standard del metodo passato come parametro
+            MethodInfo methodInfo = type.GetMethod(metodo);
+
+            if (methodInfo != null)
+                methodInfo.Invoke(this, new Object[] { statistica });
         }
 
         
