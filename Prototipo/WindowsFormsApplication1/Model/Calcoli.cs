@@ -22,12 +22,7 @@ namespace BasketSystem.Model
 
             internal static CampoStatistica Media(CampoStatistica campoPrimo, CampoStatistica campoSecondo)
             {
-                CampoStatistica result = campoPrimo / campoSecondo;
-
-                if (Double.IsNaN((double)result.Campo) || Double.IsInfinity((double)result.Campo))
-                    result = new CampoStatistica(0);
-
-                return result;
+                return new CampoStatistica(campoPrimo / campoSecondo);
             }
 
             internal static CampoStatistica Percentuale(CampoStatistica campoParziale, CampoStatistica campoTotale)
@@ -92,6 +87,7 @@ namespace BasketSystem.Model
         [Custom("Tentativi Da 2 Segnati", typeof(StatisticaGiocatore))]
         [Custom("Tentativi Da 3 Segnati", typeof(StatisticaGiocatore))]
         [Custom("Tiri Liberi Totali", typeof(StatisticaGiocatore))]
+        [Custom("Tiri Liberi Segnati", typeof(StatisticaGiocatore))]
         public void PercentualeTiri(StatisticaGiocatore statistica)
         {
             CampoStatistica tiriSegnati = new CampoStatistica(0);

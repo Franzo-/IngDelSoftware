@@ -44,6 +44,10 @@ namespace BasketSystem.Model
         //Ridefinisce l'operatore / per oggetti CampoStatistica
         public static CampoStatistica operator /(CampoStatistica a, CampoStatistica b)
         {
+            if (Double.IsNaN((dynamic)a.Campo / (dynamic)b.Campo) ||
+                Double.IsInfinity((dynamic)a.Campo / (dynamic)b.Campo))
+                return new CampoStatistica(0);
+
             return new CampoStatistica(((dynamic)a.Campo * 1.0) / (dynamic)b.Campo);
         }
 
