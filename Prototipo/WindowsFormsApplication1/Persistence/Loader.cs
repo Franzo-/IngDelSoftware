@@ -228,7 +228,6 @@ namespace BasketSystem.Persistence
                     foreach (Partita partita in campionato.Partite)
                     {
                         
-                            //Non trova la chiave, non c'è il rooster
                             foreach(Giocatore giocatore in partita.Casa.GetRooster(campionato.Anno) )
                             {
                                 GeneraStatisticheRandom(partita, giocatore, campionato);
