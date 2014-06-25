@@ -90,9 +90,11 @@ namespace BasketSystem.Model
         public override IEnumerable<StatisticaGiocatore> GetStatisticheGiocatore()
         {
             // LINQ con clone delle statistiche
-            return from stat in _campionato.Statistiche
+            // Per forzare un'eager evaluation dell'esperessione LINQ, è necessario chiamare ToArray()
+            // anche se in questo caso non è indispensabile
+            return (from stat in _campionato.Statistiche
                    where stat.GetType() == typeof(StatisticaGiocatore)
-                   select (StatisticaGiocatore) stat.Clone();
+                   select (StatisticaGiocatore) stat.Clone()).ToArray();
         }
 
     }

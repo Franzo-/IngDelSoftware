@@ -30,12 +30,8 @@ namespace BasketSystem.Presentation
             _classificaGiocatoriToolStripMenuItem.Tag = typeof(StatisticaGiocatore);
             _classificaSquadreToolStripMenuItem.Tag = typeof(StatisticaSquadra);
 
-
-            
-
             _campionatoComboBox.DataSource = Database.Campionati.ToList();
             _campionatoComboBox.SelectedIndex = 0;      //Selezione di default
-            AggiornaSquadrePartite();
 
 
             new ClassificaPresenter(_dataGridView);
@@ -45,43 +41,26 @@ namespace BasketSystem.Presentation
         private void CampionatoChanged(object sender, EventArgs e)
         {
             AggiornaSquadrePartite();
-        }
+        }        
 
         private void AggiornaSquadrePartite()
         {
-            Campionato campCorrente = (Campionato) _campionatoComboBox.SelectedItem;
-
-            // Rimuove le voci precedenti
-            _squadraComboBox.Items.Clear();
-            _partitaComboBox.Items.Clear();
+            Campionato campCorrente = Campionato;
 
             // I criteri di squadra e partita sono disponibili solo per statistiche di giocatori
             // Se la classifica corrente è di squadre, le combobox vengono nascoste
 
             if (_tipoStatistica == typeof(StatisticaGiocatore))
             {
-                //Il primo elemento delle combobox deve essere una stringa che indica "nessun filtro"
-                _squadraComboBox.Items.Add("Nessun filtro");
 
-                foreach (Squadra s in campCorrente.Squadre)
-                {
-                    //Se la partita selezionata non è l'elemento equivalente a null, qui attacco tutte le squadre contenute nella partita selezionata
-                    _squadraComboBox.Items.Add(s);
-                }
+                PopolaComboBox<Squadra>(_squadraComboBox, campCorrente.Squadre);
 
                 _squadraComboBox.Visible = true;
                 _squadraComboBox.SelectedIndex = 0;
                 _squadraLabel.Visible = true;
                 
 
-                //Il primo elemento delle combobox deve essere una stringa che indica "nessun filtro"
-                _partitaComboBox.Items.Add("Nessun filtro");
-
-                foreach (Partita p in campCorrente.Partite)
-                {
-                    //Se la squadra selezionata non è l'elemento equivalente a null, qui attacco le partite che contengono la squadra selezionata.
-                    _partitaComboBox.Items.Add(p);
-                }
+                PopolaComboBox<Partita>(_partitaComboBox, campCorrente.Partite);
 
                 _partitaComboBox.Visible = true;
                 _partitaComboBox.SelectedIndex = 0;
@@ -92,26 +71,85 @@ namespace BasketSystem.Presentation
                 _squadraLabel.Visible = false;
                 _squadraComboBox.Visible = false;
                 
-
                 _partitaLabel.Visible = false;
-                _partitaComboBox.Visible = false;
-               
+                _partitaComboBox.Visible = false;    
             }
 
             ModificaSelezionatore();
         }
 
+        private void PopolaComboBox<T>(ComboBox cb, IEnumerable<T> collection)
+        {
+            // Mantiene l'oggetto selezionato precedentemente
+            object obj = cb.SelectedItem;
+
+            // Rimuove le voci precedenti
+            cb.Items.Clear();
+
+            //Il primo elemento delle combobox deve essere una stringa che indica "nessun filtro"
+            cb.Items.Add("Nessun filtro");
+
+            foreach (T item in collection)
+            {
+                cb.Items.Add(item);
+            }
+
+            // Se c'è ancora, seleziona l'oggetto selezionato precedentemente
+            cb.SelectedItem = obj;
+        }
+
+        private void SquadraChanged()
+        {
+            Squadra squadraCorrente = _squadraComboBox.SelectedItem as Squadra;
+            if (squadraCorrente != null)
+            {
+                PopolaComboBox<Partita>(_partitaComboBox,
+                    (from partita in Campionato.Partite
+                     where partita.Casa == squadraCorrente || partita.Ospite == squadraCorrente
+                     select partita)
+                     );
+            }
+            else
+                PopolaComboBox<Partita>(_partitaComboBox, Campionato.Partite);
+        }
+
+        private void PartitaChanged()
+        {
+            Partita partitaCorrente = _partitaComboBox.SelectedItem as Partita;
+            if (partitaCorrente != null)
+            {
+                PopolaComboBox<Squadra>(_squadraComboBox,
+                    (from squadra in Campionato.Squadre
+                     where partitaCorrente.Casa == squadra || partitaCorrente.Ospite == squadra
+                     select squadra)
+                    );
+            }
+            else
+               PopolaComboBox<Squadra>(_squadraComboBox, Campionato.Squadre);
+        }
+
         //La modifica di criteri di selezione genera un nuovo selezionatore
         private void CriteriChanged(object sender, EventArgs e)
         {
-            ModificaSelezionatore();
+
+            ComboBox cb = sender as ComboBox;
+
+            if (cb != null)
+            {
+                if (cb == _squadraComboBox)
+                    SquadraChanged();
+                else if (cb == _partitaComboBox)
+                    PartitaChanged();
+
+                ModificaSelezionatore();
+            }
         }
 
         private void ModificaSelezionatore()
         {
             Classifica.Selezionatore = SelezionatoreBuilder.Build(
                 _tipoStatistica, 
-                (Campionato) _campionatoComboBox.SelectedItem, 
+                Campionato, 
                 _squadraComboBox.SelectedItem as Squadra,
                 _partitaComboBox.SelectedItem as Partita
                 );
@@ -147,6 +185,9 @@ namespace BasketSystem.Presentation
             get { return Classifica.GetInstance(); }
         }
 
-        
+        private Campionato Campionato
+        {
+            get { return (Campionato)_campionatoComboBox.SelectedItem; }
+        }
     }
 }

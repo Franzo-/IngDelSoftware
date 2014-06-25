@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -68,6 +69,7 @@ namespace BasketSystem.Model
 
         public override string ToString()
         {
+            //return ((IFormattable) _campo).ToString("F2", CultureInfo.CurrentCulture.NumberFormat);
             return "" + Campo;
         }
 

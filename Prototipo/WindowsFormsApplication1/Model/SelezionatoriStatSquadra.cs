@@ -31,9 +31,10 @@ namespace BasketSystem.Model
         public override IEnumerable<StatisticaSquadra> GetStatisticheSquadra()
         {
             // LINQ con clone delle statistiche
-            return from stat in _campionato.Statistiche
+            // Per forzare un'eager evaluation dell'esperessione LINQ, è necessario chiamare ToArray()
+            return (from stat in _campionato.Statistiche
                    where stat.GetType() == typeof(StatisticaSquadra)
-                   select (StatisticaSquadra) stat.Clone();
+                   select (StatisticaSquadra)stat.Clone()).ToArray();
         }
     }
 }
