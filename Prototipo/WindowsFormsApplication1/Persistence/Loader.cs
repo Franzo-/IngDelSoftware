@@ -240,7 +240,7 @@ namespace BasketSystem.Persistence
                     }
 
                     campionato.ToString();
-
+                    database.Campionati.Add(campionato);
 
                 }
                 catch (Exception e)

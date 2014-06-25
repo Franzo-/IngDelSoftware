@@ -31,14 +31,14 @@ namespace BasketSystem.Presentation
             _classificaSquadreToolStripMenuItem.Tag = typeof(StatisticaSquadra);
 
 
-            new ClassificaPresenter(_dataGridView);
-
-            _campionatoComboBox.DataSource = Database.Campionati;
-            _campionatoComboBox.SelectedIndex = 0;      //Selezione di default
-            AggiornaSquadrePartite();
             
 
+            _campionatoComboBox.DataSource = Database.Campionati.ToList();
+            _campionatoComboBox.SelectedIndex = 0;      //Selezione di default
+            AggiornaSquadrePartite();
 
+
+            new ClassificaPresenter(_dataGridView);
 
             //SetupLayout();
             //SetupDataGridView();
@@ -55,11 +55,9 @@ namespace BasketSystem.Presentation
         {
             Campionato campCorrente = (Campionato) _campionatoComboBox.SelectedItem;
 
-            List<Squadra> squadraSource = new List<Squadra>();
-            squadraSource.Add(null);
-
-            List<Partita> partitaSource = new List<Partita>();
-            partitaSource.Add(null);
+            // Rimuove le voci precedenti
+            _squadraComboBox.Items.Clear();
+            _partitaComboBox.Items.Clear();
 
             // I criteri di squadra e partita sono disponibili solo per statistiche di giocatori
             // Se la classifica corrente è di squadre, le combobox vengono nascoste
@@ -67,14 +65,31 @@ namespace BasketSystem.Presentation
             if (_tipoStatistica == typeof(StatisticaGiocatore))
             {
                 //Il primo elemento delle combobox deve essere un valore null perchè l'utente può non specificare il filtro corrispondente
-                
-                _squadraComboBox.DataSource = squadraSource.Concat(campCorrente.Squadre);
-                _squadraComboBox.SelectedIndex = 0;
+
+                //_squadraComboBox.DataSource = squadraSource.Concat(campCorrente.Squadre).ToList();
+                //_squadraComboBox.DataSource = (campCorrente.Squadre).ToList();
+
+                _squadraComboBox.Items.Add(new object());
+
+                foreach (Squadra s in campCorrente.Squadre)
+                {
+                    _squadraComboBox.Items.Add(s);
+                }
+
+                //_squadraComboBox.SelectedIndex = 0;
                 _squadraComboBox.Visible = true;
                 _squadraLabel.Visible = true;
-                
-                _partitaComboBox.DataSource = partitaSource.Concat(campCorrente.Partite);
-                _partitaComboBox.SelectedIndex = 0;
+
+                //_partitaComboBox.DataSource = partitaSource.Concat(campCorrente.Partite).ToList();
+                //_partitaComboBox.SelectedIndex = 0;
+
+                _partitaComboBox.Items.Add(new object());
+
+                foreach (Partita p in campCorrente.Partite)
+                {
+                    _partitaComboBox.Items.Add(p);
+                }
+
                 _partitaComboBox.Visible = true;
                 _partitaLabel.Visible = true;
             }
@@ -84,13 +99,13 @@ namespace BasketSystem.Presentation
 
                 _squadraLabel.Visible = false;
                 _squadraComboBox.Visible = false;
-                _squadraComboBox.DataSource = squadraSource;
-                _squadraComboBox.SelectedIndex = 0;
+                //_squadraComboBox.DataSource = squadraSource;
+                
 
                 _partitaLabel.Visible = false;
                 _partitaComboBox.Visible = false;
-                _partitaComboBox.DataSource = partitaSource;
-                _partitaComboBox.SelectedIndex = 0;
+                //_partitaComboBox.DataSource = partitaSource;
+               
             }
 
             ModificaSelezionatore();
@@ -107,7 +122,8 @@ namespace BasketSystem.Presentation
             Classifica.Selezionatore = SelezionatoreBuilder.Build(
                 _tipoStatistica, 
                 (Campionato) _campionatoComboBox.SelectedItem, 
-                (Squadra) _squadraComboBox.SelectedItem,
+                //(Squadra) _squadraComboBox.SelectedItem,
+                _squadraComboBox.SelectedItem as Squadra,
                 (Partita) _partitaComboBox.SelectedItem
                 );
         }

@@ -39,6 +39,10 @@ namespace BasketSystem.Presentation
 
         private void Refresh()
         {
+            // Elimina gli elementi precedenti
+            Control.Columns.Clear();
+            Control.Rows.Clear();
+
             // Il refresh deve ricevere la collezione di statistiche, 
             IEnumerable<Statistica> statistiche = Classifica.GetInstance().GetStatistiche();
 
